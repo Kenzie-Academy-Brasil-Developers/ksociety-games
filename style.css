@@ -64,9 +64,11 @@ table {
 }
 
     body {
-        
+        width:1920px;
+        height:1080px;
+        background-image: url("/gif/matrix.gif");
         background-color: black;
-        color: #287926;
+        color:#FFF;
         font-family:  'Roboto Mono', monospace;
         width: 100%;
         height: 1090px;
