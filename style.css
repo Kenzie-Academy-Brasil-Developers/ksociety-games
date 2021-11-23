@@ -7,6 +7,8 @@ table{
 tr{
     background-color: green;
 }
-th{
+td{
+    text-align: center;
     color: white;
+    width: 9%;
 }
