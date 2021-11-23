@@ -80,9 +80,10 @@ table {
         display: flex;
         justify-content:space-between;
         width: auto;
+        padding-top:20px;
         padding-left:100px;
         padding-right:100px;
-        height: 50px;
+        height: 70px;
         background-color: #287926;
         color:#FFF;
     
@@ -122,16 +123,28 @@ table {
     div.infoForm {
         width:250px;
         margin-top:10px;
-
     }
     
-
+    .infoForm button {
+        width:61.453px;
+        height:30px;
+        background-color: #287926;
+        color:#FFF;
+    }
     
+    .infoForm input#name {
+        height:25px;
+    }
+
+    .infoForm input#word {
+        height:25px;
+    }
+
     /* GAME */
     
     div.game {
         width:400px;
-        height:700px;
+        height:650px;
         text-align:center;
         font-size: 32px;
     }
@@ -139,7 +152,7 @@ table {
     /* GAME 2 (START/RESET/TIMER) */
 
     div.game2 {
-        padding-top:50px;
+        padding-top:54px;
     }
 
     /* CAÇA PALAVRAS */
@@ -149,7 +162,6 @@ table {
 
     .letterBox {
         margin-top:20px;
-        border: 2px solid white;
         height:550px;
         background-color:#FFF;
     }
@@ -163,16 +175,16 @@ table {
     /* START */
     
     button#start {
-        width:150px;
-        height:50px;
+        width:200px;
+        height:70px;
         background-color: #287926;
         color:#FFF;
     }
     /* RESET */
 
     button#reset {
-        width:150px;
-        height:50px;
+        width:200px;
+        height:70px;
         background-color: #287926;
         color:#FFF;
     }
