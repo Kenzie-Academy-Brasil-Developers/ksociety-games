@@ -1,0 +1,12 @@
+table{
+    background-color: red;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+tr{
+    background-color: green;
+}
+th{
+    color: white;
+}
