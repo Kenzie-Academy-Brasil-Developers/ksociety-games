@@ -12,29 +12,64 @@
     <header>
         <h3>ksociety games</h3>
     </header>
+
+        <!-- CONTAINER -->
+
     <section>
 
-            <!-- Digite seu nome -->
-            <div>
-                <p>Digite seu nome</p>
-                <input type="name">
-                <button>Enviar</button>
+            <!-------PLAYER INFO-------->
+
+             <div class="playerInfo">
+            
+            <!-----DIGITE SEU NOME------>
+                
+                <p class="text">Digite seu nome</p>
+            
+            <!------FORMULÁRIO----->
+
+                <div class="infoForm">
+
+                    <input type="name">
+                    <button>Enviar</button>
+                
+                </div>
+
             </div>
 
-            <!-- Caixa de letras -->
-            <h2>Caça Palavras</h2>
+            <!----------GAME------------>
+            <div class="game">
+
+            <!--------LETTER BOX-------->
+
+            <p class="title">Caça Palavras</p>
             <div id="letterBox">
             </div>
 
-            <!-- plugin cronometro -->
-            <div></div>
-            <button>Start</button>
 
-            <!-- Palavras encontradas -->
-            <div><p>Palavras encontradas</p>
-            <input type="world">  
-            <button>Enviar</button>
-            <button>Reset</button></div>
+            <!--------CRONOMETRO-------->
+
+            <div id="timer"></div>
+            <button id="start">Start</button>
+
+            </div>
+
+            <!---CHECKBOX--->
+
+            <div class="checkBox">
+                <p class="text">Palavras encontradas</p>
+
+            <!-- FORMULÁRIO PALAVRAS ENCONTRADAS -->
+                <div class="infoForm">
+                <input type="world">
+            
+            <!--------- ENVIAR --------->
+                <button>Enviar</button>
+                </div>
+
+            <!--------- RESET ---------->
+                <button id="reset">Reset</button>
+
+            </div>
 
     </section>
     <script type="text/javascript" src="/script.js"></script>
