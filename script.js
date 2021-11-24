@@ -177,6 +177,7 @@ function pesquisaPalavra(){
         console.log(posicao);
         if(palavrasDaMatrix.includes(search.toUpperCase())){
             palavrasDaMatrix.splice(posicao, 1);
+            entrada.value = "";
             counter++;  
             if(counter < 3){
                 alert("Parabéns, achou uma palavra!");
