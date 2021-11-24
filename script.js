@@ -147,6 +147,20 @@ function resetTabela(){
     })
 }
 
+const nomeJogador = document.getElementById('name');
+const botaoEnviarNome = document.getElementById('enviarNome');
+let nomeDoInput = '';
+
+function buscarNomeJogador(){
+
+    botaoEnviarNome.addEventListener('click', function(){
+        console.log(nomeJogador.value);
+        nomeDoInput = nomeJogador.value;
+    })
+}
+
+buscarNomeJogador();
+
 const botaoPesquisar = document.getElementById('pesquisar');
 const entrada = document.getElementById('word');
 
@@ -167,7 +181,7 @@ function pesquisaPalavra(){
             if(counter < 3){
                 alert("Parabéns, achou uma palavra!");
             } else {
-                alert("Parabéns, você achou todas as palavras! Clique em reset para jogar de novo");
+                alert(`Parabéns, ${nomeDoInput}, você achou todas as palavras! Clique em reset para jogar de novo`);
                 counter = 0;
             }
         }
