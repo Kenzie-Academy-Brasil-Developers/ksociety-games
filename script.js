@@ -1,3 +1,5 @@
+/*
+
 // GERA AS LETRAS ALEATÓRIAS
 function criaLetras(){
     let numero = 0;
@@ -23,6 +25,8 @@ function criaTabela(){
     }
     return renderizaTabela(arr)
 }
+
+*/
 
 // CRIA A TABELA NO HTML E ADICIONA AS LETRAS ALEATÓRIAS NAS POSIÇÕES DA TABELA
 
