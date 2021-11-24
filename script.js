@@ -28,8 +28,6 @@ function criaTabela(){
 
 */
 
-// CRIA A TABELA NO HTML E ADICIONA AS LETRAS ALEATÓRIAS NAS POSIÇÕES DA TABELA
-
 let matrix = [];
 
 //Cria uma matriz 10x10 
@@ -178,13 +176,6 @@ function pesquisaPalavra(){
     botaoPesquisar.addEventListener('click', function(){
 
         let search = entrada.value;
-        console.log(search);
-
-        let max = 0
-        if(max>3){
-
-        }
-
         let posicao = palavrasDaMatrix.indexOf(search.toUpperCase());
         console.log(posicao);
         if(palavrasDaMatrix.includes(search.toUpperCase())){
@@ -195,7 +186,6 @@ function pesquisaPalavra(){
                 palavrasEcontradas(search)
             } else {
                 alert(`Parabéns, ${nomeDoInput}, você achou todas as palavras! Clique em reset para jogar de novo`);
-                palavrasEcontradas(search)
                 counter = 0;
             }
         }
