@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
+
+body {
+    width: 95%;
+    height: 800px;
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Roboto mono', monospace;
+
+}
+
+main {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+div.quest {
+    display: flex;
+    justify-content: space-around;
+}
+
+p.red {
+
+    font-size: 50px;
+    color: red;
+
+}
+p.red:hover {
+
+    color: white;
+
+}
+
+p.blue {
+
+    color: blue;
+    font-size: 50px;
+}
+
+p.blue:hover {
+
+    color: white;
+    
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
