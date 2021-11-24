@@ -1,230 +1,27 @@
-
-
-
-@media screen and (max-width: 800px) {
-
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
-
-    body {
-
-    background-color: black;
-    color: #41C93E;
-    font-family: 'Roboto Mono', monospace;
-    width: 100%;
-    height: 1090px;
-    }
-
-/* CABEÇALHO */
-
-    header {
-
-        display: flex;
-        width: auto;
-        justify-content: center;
-        height: 50px;
-        background-color:#41C93E;
-
-        }
-
-    h3 {
-
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: space-around;
-        color:white;
-    }
-
-    /* CONTAINER */
-
-    section {
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        justify-content: center;
-
-        }
-    /* TUTORIAL */
-
-    p.tuto {
-        width: 300px;
-        text-align: center;
-    }
-
-    p.tuto2 {
-        width: 300px;
-        text-align: center;
-    }
-
-    div.tutorial {
-        width: 100%;
-        height: 144px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 10px;
-    }
-
-    /* PLAYER INFO */
-
-    div.playerInfo {
-
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-
-        }
-
-    /* DIGITE SEU NOME */
-
-    p.text {
-
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        padding: 5px 5px 5px 5px;
-        margin-top: 30px;
-
-        }
-
-    /* ENVIAR */
-
-    button.form {
-        background-color: #41C93E;
-        border: 0px;
-        font-family: 'Roboto Mono', monospace;
-        color: white;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
-
-    /* FORMULÁRIO */
-
-    div.infoForm {
-
-        display: flex;
-        justify-content: center;
-        padding: 5px 5px 5px 5px;
-
-        }
-
-    /* GAME */
-
-    div.game {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        }
+table{
     
-    input {
-        width: 200px;
-        height: 20px;
-        border: 0;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-    }
-
-    /* LETTER BOX */
-
-
-    /* CAÇA PALAVRAS */
-    p.title {
-
-        font-size: 30px;
-        padding: 10px 10px 10px 10px;
-
-        }
-
-    div.letterBox {
-
-        display: flex;
-        justify-content: center;
-        width: 300px;
-        height: 300px;
-        background-color: white;
-
-        }
-
-    /* START RESET */
-
-    div.startReset {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        margin-top: 30px;
-    }
-
-    /* CHECKBOX */
-
-    div.checkBox {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        }
-
-    /* START */
-
-    button#start {
-
-        width: 100px;
-        height: 50px;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        background-color: #41C93E;
-        color: white;
-        border: 0px;
-        font-size: large;
-        }
-
-    button#reset {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100px;
-        height: 50px;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-        border: 0px;
-        background-color: #41C93E;
-        color: white;
-        font-size: large;
-        }
-    }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
+    width: 400px;
+    height: 100%;
+    margin: auto;
+}
+tr{
+    background-color: green;
+}
+td{
+    text-align: center;
+    color: white;
+    width: 9%;
+}
 
 
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {   
+   
     @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
 
-.fullbox {
-    padding-top:60px;
-    display:flex;
-    justify-content:space-evenly;
-}
-
-
-
-.h4 {
-    font-size:24px;
-    padding-top:8px;
-    text-align:left;
-}
-
-    body {
-        width:1920px;
-        height:1080px;
-        background-image: url("/gif/matrix.gif");
+    
+   
+   body {
         background-color: black;
         color:#FFF;
         font-family:  'Roboto Mono', monospace;
@@ -232,41 +29,71 @@
         height: 1090px;
     }
     
-    
-    /* CABEÇALHO */
+    /* CONTAINER \/ */
+
+    .fullbox {
+    padding-top:60px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+    /* CABEÇALHO \/ */
     
     
     header {
         display: flex;
         justify-content:space-between;
-        width: auto;
+        width: 100%;
         padding-top:20px;
-        padding-left:100px;
-        padding-right:100px;
-        height: 70px;
+        height: 40px;
         background-color: #287926;
         color:#FFF;
-    
-    }
-    
-    h3 {
         font-size:24px;
-        padding-top:8px;
     }
     
     
-    /* CONTAINER */
-    
-    
-    section {
-    }
-    
-    /* PLAYER INFO */
+    /* PLAYER INFO \/ */
     
     div.playerInfo {
-        padding-top:50px;
+        padding-top:10px;
     }
+
+        /* FORMULÁRIOS \/ */
     
+        div.infoForm {
+            padding-top:10px;
+            width:250px;
+            margin-bottom:40px;
+        }
+        
+        .infoForm button {
+            width:50px;
+            height:30px;
+            background-color: #287926;
+            color:#FFF;
+    
+        }
+        
+        .infoForm input#name {
+            height:25px;
+        }
+    
+        .infoForm input#word {
+            height:25px;
+        }
+    
+
+    /* GAME CONTAINER \/ */
+    
+    div.game {
+        width:400px;
+        height:650px;
+        text-align:center;
+        font-size: 32px;
+    }
+
+    /* CHECKBOX \/ */
+
     .checkBox {
         margin-top:10px;
     }
@@ -277,48 +104,15 @@
         background-color: #FFF;;
         border:2px solid white;
     }
-
-    /* FORMULÁRIO */
     
-    div.infoForm {
-        width:250px;
-        margin-top:10px;
-    }
-    
-    .infoForm button {
-        width:61.453px;
-        height:30px;
-        background-color: #287926;
-        color:#FFF;
-    }
-    
-    .infoForm input#name {
-        height:25px;
-    }
-
-    .infoForm input#word {
-        height:25px;
-    }
-
-    /* GAME */
-    
-    div.game {
-        width:400px;
-        height:650px;
-        text-align:center;
-        font-size: 32px;
-    }
-    
-    /* GAME 2 (START/RESET/TIMER) */
+    /* GAME CONTAINER 2 \/ (START/RESET/TIMER) */
 
     div.game2 {
-        padding-top:54px;
+        padding-top:40px;
     }
 
-    /* CAÇA PALAVRAS */
+    /* CAÇA PALAVRAS \/ */
 
-    p.title {
-    }
 
     .letterBox {
         margin-top:20px;
@@ -326,21 +120,9 @@
         background-color:#FFF;
     }
     
+    
 
-    /* CHECKBOX */
-    
-    div.checkBox {
-    }
-    
-    /* START */
-    
-    button#start {
-        width:200px;
-        height:70px;
-        background-color: #287926;
-        color:#FFF;
-    }
-    /* RESET */
+    /* RESET \/ */
 
     button#reset {
         width:200px;
@@ -349,10 +131,158 @@
         color:#FFF;
     }
 
-    /* TIMER */
+    /* TIMER \/ */
 
     .timer {
 
+    }
+
+}
+
+
+
+
+/* DESKTOP ABAIXO */
+
+@media screen and (min-width: 800px) {
+    @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
+
+
+
+    body {
+        width:100%;
+        height:1080px;
+        background-image: url("/gif/matrix.gif");
+        background-size: cover;
+        background-color: black;
+        color:#FFF;
+        font-family:  'Roboto Mono', monospace;
+    }
+
+    /* CONTAINER */
+
+    .fullbox {
+        display:flex;
+        justify-content:space-evenly;
+        margin-top:150px;
+    }
+    
+    /* CABEÇALHO */
+    
+    
+    header {        
+        display:flex;
+        justify-content:space-between;
+        width: 100%;
+        height: 100px;
+        background-color: #287926;
+        color:#FFF;
+        font-size:32px;
+        padding-top:10px;
+        padding-bottom:10px;
+        align-items:center;
+
+    }
+    
+    h3 {
+        text-align:left;
+        padding-left:50px;
+    }
+
+    h4 {
+        text-align:right;
+        padding-right:50px;
+    }
+    
+    /* PLAYER INFO */
+    
+    div.playerInfo {
+        padding-top:50px;
+        font-size:24px;
+    }
+
+    
+    /* FORMULÁRIO */
+    
+    div.infoForm {
+        padding-top:10px;
+        width:330px;
+        margin-bottom:50px;
+    }
+    
+    .infoForm button {
+        width:80px;
+        height:40px;
+        background-color: #287926;
+        color:#FFF;
+    }
+    
+    .infoForm input#name {
+        height:35px;
+        width:220px;
+        margin-top:10px;
+        margin-bottom:280px;
+    }
+
+    .infoForm input#word {
+        height:35px;
+        width:225px;
+        margin-bottom:20px;
+        margin-top:10px;
+    }
+
+    /* GAME */
+    
+    div.game {
+        
+        width:350px;
+        height:650px;
+        text-align:center;
+        font-size: 32px;
+    }
+    
+    /* RESET/FOUND BOX */
+
+    div.game2 {
+        padding-top:40px;
+    }
+
+    /* CAÇA PALAVRAS */
+
+    p.title {
+    }
+
+    .letterBox {
+        width:350px;
+        margin-top:20px;
+        height:550px;
+        background-color:#FFF;
+    }
+    
+
+    /* CHECKBOX */
+    
+    .checkBox {
+        font-size:24px;
+        margin-top:10px;
+        margin-bottom:160px;
+    }
+    
+    .found {
+        width:233px;
+        margin-top:10px;
+        height:208px;
+        background-color: #FFF;;
+    }
+
+
+    /* RESET */
+
+    button#reset {
+        width:200px;
+        height:70px;
+        background-color: #287926;
+        color:#FFF;
     }
 }
 
