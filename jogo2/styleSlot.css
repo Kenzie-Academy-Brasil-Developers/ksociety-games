@@ -9,6 +9,8 @@ body {
     font-variant: small-caps;
 }
 
+/* CABEÇALHO */
+
 header {
     display: flex;
     justify-content:space-between;
@@ -20,6 +22,8 @@ header {
     font-size: 22px;
     margin-bottom:150px;
 }
+
+/* TÍTULOS */
 
 h1 {
     text-align:center;
@@ -38,6 +42,7 @@ h4 {
     padding-right:20px;
 }
 
+/* MAIN */
 
 main{
     display:flex;
@@ -48,6 +53,8 @@ main{
 
 }
 
+/* FULLBOX */
+
 .fullbox {
     width: 300px;
     height: 500px;
@@ -57,7 +64,7 @@ main{
     margin-right:1px;
     margin-left:1px;
     
-    
+/* PAINEL DO CAÇA NIQUEIS  */
 
 }
 .centro1{
@@ -69,6 +76,9 @@ main{
     border-radius: 5px 5px 5px 5px;
     margin-bottom:65px;
 }
+
+/* SLOTS */
+
 .slot{
     width: 33vw;
     height: 100px;
@@ -81,6 +91,8 @@ main{
 .slot p{
     margin-top: 20px;
 }
+
+/* START */
 
 #start{
     width:100%;
@@ -95,6 +107,9 @@ main{
     border-radius: 5px 5px 5px 5px;
     margin-top: 30px;
 }
+
+/* RESULT */
+
 .result{
     font-size: 50px;
     text-align: center;
@@ -118,6 +133,8 @@ body {
     font-variant: small-caps;
 }
 
+/* CABEÇALHO */
+
 header {
     display: flex;
     justify-content:space-between;
@@ -130,6 +147,8 @@ header {
     font-size: 72px;
     margin-bottom:750px;
 }
+
+/* TÍTULOS */
 
 h1 {
     text-align:center;
@@ -148,6 +167,7 @@ h4 {
     padding-right:20px;
 }
 
+/* MAIN */
 
 main{
     display:flex;
@@ -158,6 +178,8 @@ main{
 
 }
 
+/* PAINEL GERAL */
+
 .fullbox {
     width: 800px;
     height: 800px;
@@ -165,8 +187,10 @@ main{
     flex-direction:column;
     justify-content:space-evenly;
     
-
 }
+
+/* PAINEL DO CAÇA NIQUEIS */
+
 .centro1{
     display: flex;
     justify-content: space-between;
@@ -176,6 +200,9 @@ main{
     border-radius: 5px 5px 5px 5px;
     margin-bottom:80px;
 }
+
+/* SLOTS */
+
 .slot{
     width: 33%;
     height: 250px;
@@ -188,6 +215,8 @@ main{
 .slot p{
     margin-top: 20px;
 }
+
+/* START */
 
 #start:hover{
         background-color: #FFF;
@@ -207,6 +236,9 @@ main{
     border-radius: 5px 5px 5px 5px;
     margin-top: 30px;
 }
+
+/* RESULT */
+
 .result{
     font-size: 50px;
     text-align: center;
