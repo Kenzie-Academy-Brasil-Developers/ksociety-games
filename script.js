@@ -177,7 +177,7 @@ function resetTabela(){
 }
 
 const botaoPesquisar = document.getElementById('pesquisar');
-const entrada = document.getElementById('entrada');
+const entrada = document.getElementById('word');
 
 let counter = 0;
 
