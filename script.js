@@ -178,17 +178,18 @@ function renderizaTabela(matrix){
     divCentro.appendChild(tableCentro)
 }
 
+let counter = 0;
+
 function resetTabela(){
     botao.addEventListener('click',function(){
         criarValoresNaMatriz(matrix);
         addTresPalavrasNaMatriz(palavras, matrix)
+        counter = 0;
     })
 }
 
 const botaoPesquisar = document.getElementById('pesquisar');
 const entrada = document.getElementById('word');
-
-let counter = 0;
 
 
 /**Função que verifica se a palavra digitada pelo usuário está no caça-palavras
@@ -199,16 +200,22 @@ function pesquisaPalavra(){
     botaoPesquisar.addEventListener('click', function(){
 
         let search = entrada.value;
-        console.log(search);
+        let posicao = palavrasDaMatrix.indexOf(search.toUpperCase());
+        console.log(posicao);
         if(palavrasDaMatrix.includes(search.toUpperCase())){
+            palavrasDaMatrix.splice(posicao, 1);
             counter++;  
             if(counter < 3){
                 alert("Parabéns, achou uma palavra!");
             } else {
                 alert("Parabéns, você achou todas as palavras! Clique em reset para jogar de novo");
                 counter = 0;
-            }   
+            }
         }
+        
+        //console.log(palavrasDaMatrix[posicao]);
+        
+        console.log(palavrasDaMatrix);
     })
 }
 
