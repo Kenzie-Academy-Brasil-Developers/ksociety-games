@@ -143,6 +143,9 @@ function resetTabela(){
     botao.addEventListener('click',function(){
         criarValoresNaMatriz(matrix);
         addTresPalavrasNaMatriz(palavras, matrix)
+        // REMOVE AS PALAVRAS DA BOX DE ENCONTRADOS
+        const div = document.getElementById('encontrados')
+        div.innerHTML = ''
         counter = 0;
     })
 }
@@ -181,6 +184,7 @@ function pesquisaPalavra(){
             counter++;  
             if(counter < 3){
                 alert("Parabéns, achou uma palavra!");
+                palavrasEcontradas(search)
             } else {
                 alert(`Parabéns, ${nomeDoInput}, você achou todas as palavras! Clique em reset para jogar de novo`);
                 counter = 0;
@@ -189,6 +193,16 @@ function pesquisaPalavra(){
         
         console.log(palavrasDaMatrix);
     })
+}
+// RETORNA AS PALAVRAS ENCONTRADAS
+function palavrasEcontradas(x){
+    const div = document.getElementById('encontrados')
+    const p = document.createElement('p')
+    p.classList.add('pEncontrado')
+
+    p.innerText = x
+
+    div.appendChild(p)
 }
 
 
