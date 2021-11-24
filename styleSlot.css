@@ -1,0 +1,32 @@
+main{
+    background-color: red;
+    width: 500px;
+    height: 500px;
+}
+.centro1{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blueviolet;
+    padding-bottom: 40px;
+}
+.slot{
+    width: 30%;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 40px;
+}
+.slot p{
+    margin-top: 20px;
+}
+
+#start{
+    margin-top: 30px;
+    margin-left: 45%;
+}
+.result{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
