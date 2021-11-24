@@ -81,6 +81,7 @@ const palavras = ['css', 'kenzie', 'programa', 'objeto', 'variavel', 'dev', 'hac
  'mobile', 'array', 'software', 'notebook', 'ubuntu', 'linux', 'google', 'terminal', 'algoritmo',
 'matrix', 'slack', 'html', 'codewars'];
 
+
 function addPalavrasNaMatrizHorizontal(palavra, matrix, linha){
     
     for(let i = 0; i < palavra.length; i++){
@@ -93,6 +94,8 @@ function addPalavrasNaMatrizHorizontal(palavra, matrix, linha){
 
 }
 
+const palavrasDaMatrix = [];
+const indicesDasLinhasDasPalavras = [];
 
 function addTresPalavrasNaMatriz(palavras, matrix){
 
@@ -135,9 +138,18 @@ function addTresPalavrasNaMatriz(palavras, matrix){
         addPalavrasNaMatrizHorizontal(palavras[aleatorio2], matrix, linha2);
         addPalavrasNaMatrizHorizontal(palavras[aleatorio3], matrix, linha3);
 
+        palavrasDaMatrix.push(palavras[aleatorio1].toUpperCase());
+        palavrasDaMatrix.push(palavras[aleatorio2].toUpperCase());
+        palavrasDaMatrix.push(palavras[aleatorio3].toUpperCase());
+
+        indicesDasLinhasDasPalavras.push(linha1);
+        indicesDasLinhasDasPalavras.push(linha2);
+        indicesDasLinhasDasPalavras.push(linha3);
+
         return renderizaTabela(matrix);
 
 }
+
 const botao = document.getElementById('reset')
 function renderizaTabela(matrix){
     const divCentro = document.getElementById('centro')
@@ -148,9 +160,9 @@ function renderizaTabela(matrix){
     for(let i=0;i<10;i++){
         const trCentro = document.createElement('tr')
         for(let j=0;j<10;j++){
-            const thCentro = document.createElement('td')
-            thCentro.innerText = matrix[i][j]
-            trCentro.appendChild(thCentro)
+            const tdCentro = document.createElement('td')
+            tdCentro.innerText = matrix[i][j]
+            trCentro.appendChild(tdCentro)
         }
         tableCentro.appendChild(trCentro)
     }
@@ -164,7 +176,36 @@ function resetTabela(){
     })
 }
 
+const botaoPesquisar = document.getElementById('pesquisar');
+const entrada = document.getElementById('entrada');
+
+let counter = 0;
+
+
+/**Função que verifica se a palavra digitada pelo usuário está no caça-palavras
+ * e, caso sim, retorna uma mensagem alertando que uma palavra foi encontrada
+ * e ao encontrar todas, alerta o fato de que todas foram encontradas e pede que faça reset
+ */
+function pesquisaPalavra(){
+    botaoPesquisar.addEventListener('click', function(){
+
+        let search = entrada.value;
+        console.log(search);
+        if(palavrasDaMatrix.includes(search.toUpperCase())){
+            counter++;  
+            if(counter < 3){
+                alert("Parabéns, achou uma palavra!");
+            } else {
+                alert("Parabéns, você achou todas as palavras! Clique em reset para jogar de novo");
+                counter = 0;
+            }   
+        }
+    })
+}
+
+
 criarValoresNaMatriz(matrix);
 resetTabela();
-
+pesquisaPalavra();
+console.log(palavrasDaMatrix);
 console.table(addTresPalavrasNaMatriz(palavras, matrix));
