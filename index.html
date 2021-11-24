@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/reset.css">
+    <link id="s1" rel="stylesheet" href="./style.css">
+    <link id="s2" rel="stylesheet" href="./styleSlot.css" disabled=true>
+    <link id="s2" rel="index2.html" href="./indexCasino.html" disabled=true>
     <title>Caça-Palavras - Ksociety</title>
 </head>
 <body>
@@ -13,32 +15,39 @@
             <h3>kenzie academy</h3>
         
             <h4>ksociety</h4>
+
+            
     </header>
 
         <!-- CONTAINER -->
 
 <section>
 
+        <div class="playerInfoBox">
+                <!-------PLAYER INFO-------->
+
+            <div class="playerInfo">
+
+                    <p class="text">digite seu nome:</p>
+    
+                <!------FORMULÁRIO----->
+                <div class="infoForm">
+                    <input type="text" placeholder="" id="name" name="name">
+    
+                    <button>enviar</button>
+    
+    
+                </div>
+    
+            </div>
+        
+        </div>
+
         <!--BOX GERAL-->
 
     <div class="fullbox">
 
-            <!-------PLAYER INFO-------->
 
-        <div class="playerInfo">
-
-                <p class="text">digite seu nome:</p>
-
-            <!------FORMULÁRIO----->
-            <div class="infoForm">
-                <input type="text" placeholder="" id="name" name="name">
-
-                <button>Enviar</button>
-
-
-            </div>
-
-        </div>
 
             <!----------GAME------------>
             <div class="game">
@@ -58,9 +67,10 @@
                     <div class="infoForm">
                         <input type="text" placeholder="" id="word" name="word">
 
-                        <button id="pesquisar">Enviar</button>
-                        <div class="found"></div>
+                        <button id="pesquisar">enviar</button>
+                        
                     </div>
+                    <div class="found"></div>
                 </div>
 
                 <!--------- RESET ---------->
@@ -68,8 +78,39 @@
         </div>
     </div>
 
-</section>
 
-    <script type="text/javascript" src="script.js"></script>
+</section>
+<footer>
+    <nav>
+        jogos:
+        <a id="activate1" href="#">1</a>
+        <a id="activate2" href="#">2</a>
+    </nav>
+</footer>
+
+    <script type="text/javascript" src="/script.js"></script>
+    <script>
+                    function changeToOne() {
+                const s1 = document.getElementById('s1');
+                const s2 = document.getElementById('s2');
+
+                s2.disabled = true;
+                s1.disabled = false; 
+            }
+
+            function changeToTwo() {
+                const s1 = document.getElementById('s1');
+                const s2 = document.getElementById('s2');
+
+                s1.disabled = true;
+                s2.disabled = false;
+            }
+
+            const activate1 = document.getElementById('activate1');
+            const activate2 = document.getElementById('activate2');
+
+            activate1.addEventListener('click', changeToOne);
+            activate2.addEventListener('click', changeToTwo);
+    </script>
 </body>
 </html>
