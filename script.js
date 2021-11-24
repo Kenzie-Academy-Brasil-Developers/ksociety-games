@@ -79,5 +79,3 @@ function addTresPalavrasNaMatriz(palavras, matrix){
 
 criarValoresNaMatriz(matrix);
 console.table(addTresPalavrasNaMatriz(palavras, matrix));
-
-console.log(matrix.length);
