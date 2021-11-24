@@ -43,20 +43,29 @@ function slot(){
         let esquerda = Math.floor(Math.random() *10)
         let centro = Math.floor(Math.random() *10)
         let direita = Math.floor(Math.random() *10)
+        //
+        let slotMeio = document.getElementById('slot-esqueda')
+        slotMeio.firstElementChild.innerHTML = esquerda
+        let slotCentro = document.getElementById('slot-centro')
+        slotCentro.firstElementChild.innerHTML = centro
+        let slotDireita = document.getElementById('slot-direita')
+        slotDireita.firstElementChild.innerHTML = direita
 
-        let slotMeio = document.getElementById('slot-esqueda').innerHTML = esquerda
-        let slotCentro = document.getElementById
-        document.centro = numeros[centro]
-        document.direita = numeros[direita]
-
-        if(count > 5){
+        if(count > 20){
             let finalEsquerda = numeros[esquerda]
             let finalCentro = numeros[centro]
             let finalDireita = numeros[direita]
 
-            if((finalEsquerda===finalCentro) || (finalEsquerda===finalDireita) || (finalDireita===finalCentro)){
-                document.getElementById('result').innerText = 'olá'
+            if((finalEsquerda===finalDireita)&&(finalEsquerda===finalCentro)&&(finalDireita===finalCentro)){
+                document.getElementById('result').innerText = 'Você acertou as 3 posições e ganhou!'
             }
+            else if((finalEsquerda===finalCentro) || (finalEsquerda===finalDireita) || (finalDireita===finalCentro)){
+                document.getElementById('result').innerText = 'Você acertou 2 posições e ganhou metade do premio!'
+            }else{
+                document.getElementById('result').innerText = 'Você perdeu, tente novamente'
+            }
+            count = 0;
+            clearInterval(random)
         }
     },100)
 }
