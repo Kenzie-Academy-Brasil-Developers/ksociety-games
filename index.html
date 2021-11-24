@@ -10,86 +10,66 @@
 </head>
 <body>
     <header>
-        <h3>ksociety games</h3>
-        <h3>kenzie academy</h3>
+            <h3>kenzie academy</h3>
+        
+            <h4>ksociety</h4>
     </header>
 
         <!-- CONTAINER -->
 
-    <section>
+<section>
 
-            <!-----DIGITE SEU NOME------>
-                    
-            <p class="text">Digite seu nome</p>
-                
-            <!------FORMULÁRIO----->
+        <!--BOX GERAL-->
 
-                <div class="infoForm">
+    <div class="fullbox">
 
-                    <input type="name">
-                    <button class="form">Enviar</button>
-                
-                </div>
-
-            </div>
-                <div class="tutorial">
-                    <p class="tuto">sem bem vindo(a), ,esse é o 
-                        caça-palavras da ksociety
-                    </p>
-                    <p class="tuto2"> sua missão é encontrar as palavras relacionadas
-                        com a sua jornada de aprendizado como dev na kenzie academy
-                    </p>
-                </div>
             <!-------PLAYER INFO-------->
 
-             <div class="playerInfo">
-            
+        <div class="playerInfo">
+
+                <p class="text">digite seu nome:</p>
+
+            <!------FORMULÁRIO----->
+            <div class="infoForm">
+                <input type="text" placeholder="" id="name" name="name">
+
+                <button>Enviar</button>
+
+
+            </div>
+
+        </div>
 
             <!----------GAME------------>
             <div class="game">
-
-            <!--------LETTER BOX-------->
-
-                <p class="title">Caça Palavras</p>
-                <div class="letterBox" id="centro">
-                    
-                </div>
+                
+                <h1>caça palavras_</h1>
+                <div class="letterBox" id="centro"></div>
             </div>
 
+            <!--------RESET BOX/WORDS FOUND-------->
+            <div class="game2">
 
-            <div class="lastBox">
-            <!---CHECKBOX--->
+                            <!---CHECKBOX--->
 
-            <div class="checkBox">
-                <p class="text">Palavras encontradas</p>
+                <div class="checkBox">
+                        <p class="text">palavras que encontrou:</p>
+                        <!-- FORMULÁRIO PALAVRAS ENCONTRADAS -->
+                    <div class="infoForm">
+                        <input type="text" placeholder="" id="word" name="word">
 
-            <!-- FORMULÁRIO PALAVRAS ENCONTRADAS -->
-                <div class="infoForm">
-                    <input type="word" id="entrada">
-            
-            <!--------- ENVIAR --------->
-                <button class="form" id="pesquisar">Enviar</button>
-                </div>
-                <div class="boxWords">
-
+                        <button id="pesquisar">Enviar</button>
+                        <div class="found"></div>
+                    </div>
                 </div>
 
-
-            </div>
-            <!--------CRONOMETRO-------->
-            <div id="timer"></div>
-
-            <!--------START RESET------->
-
-                <div class="startReset">
-                <button id="start">START</button>
-
-            <!--------- RESET ---------->
-                <button id="reset">RESET</button>
+                <!--------- RESET ---------->
+                <button id="reset">reset</button>
         </div>
-        
     </div>
-    </section>
+
+</section>
+
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
