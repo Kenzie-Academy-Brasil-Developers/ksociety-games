@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleSlot.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/jogo2/styleSlot.css">
+    <title>Caça-Níqueis</title>
 </head>
 <body>
+
+    <header>
+        <h3>kenzie academy</h3>
+        
+        <h4>ksociety</h4>
+    </header>
+
     <main>
-        <div class="centro1">
-            
+        <div class=fullbox>
+                <h1>teste a sua sorte</h1>
+            <!--PAINEL DO CAÇA NIQUEIS-->
+            <div class="centro1">
+            <!--SLOTS DO CAÇA NIQUEIS-->
             <div class="slot" id="slot-esqueda" name="esqueda">
                 <p></p>
             </div>
@@ -23,9 +34,10 @@
                 <p></p>
             </div>
 
+            </div>
+                <button id="start" onclick="slot()">start</button>
+                <p class="result" id="result"></p>
         </div>
-        <button id="start" onclick="slot()">Iniciar</button>
-        <p class="result" id="result"></p>
     </main>
     <script src="scriptCasino.js"></script>
 </body>
