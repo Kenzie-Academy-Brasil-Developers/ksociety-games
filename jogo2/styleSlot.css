@@ -124,7 +124,8 @@ main{
 
 body {
     background-image: url("/gif/matrix.gif");
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: black;
     color:#FFF;
     font-family:  'Roboto Mono', monospace;
