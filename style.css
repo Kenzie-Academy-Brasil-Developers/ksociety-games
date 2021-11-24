@@ -11,7 +11,10 @@ td{
     color: white;
     width: 9%;
 }
-
+.pEncontrado{
+    color: black;
+    margin: 15px;
+}
 
 
 @media screen and (max-width: 800px) {   
@@ -284,16 +287,3 @@ td{
         color:#FFF;
     }
 }
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete

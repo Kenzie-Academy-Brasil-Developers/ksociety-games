@@ -37,24 +37,27 @@ const numeros = [1,2,3,4,5,6,7,8,9]
 let count = 0;
 
 function slot(){
-    const random = setInterval(function(){
+    const cassino = setInterval(function(){
         count++
 
-        let esquerda = Math.floor(Math.random() *10)
-        let centro = Math.floor(Math.random() *10)
-        let direita = Math.floor(Math.random() *10)
-        //
+        let esquerda = Math.floor(Math.random() *9)
+        let centro = Math.floor(Math.random() *9)
+        let direita = Math.floor(Math.random() *9)
+
         let slotMeio = document.getElementById('slot-esqueda')
-        slotMeio.firstElementChild.innerHTML = esquerda
+        slotMeio.firstElementChild.src = '/slot/'+esquerda+'.png'
         let slotCentro = document.getElementById('slot-centro')
-        slotCentro.firstElementChild.innerHTML = centro
+        slotCentro.firstElementChild.src = '/slot/'+centro+'.png'
         let slotDireita = document.getElementById('slot-direita')
-        slotDireita.firstElementChild.innerHTML = direita
+        slotDireita.firstElementChild.src = '/slot/'+direita+'.png'
 
         if(count > 20){
             let finalEsquerda = numeros[esquerda]
+            slotMeio.firstElementChild.src = '/slot/'+finalEsquerda+'.png'
             let finalCentro = numeros[centro]
+            slotCentro.firstElementChild.src = '/slot/'+finalCentro+'.png'
             let finalDireita = numeros[direita]
+            slotDireita.firstElementChild.src = '/slot/'+finalDireita+'.png'
 
             if((finalEsquerda===finalDireita)&&(finalEsquerda===finalCentro)&&(finalDireita===finalCentro)){
                 document.getElementById('result').innerText = 'Você acertou as 3 posições e ganhou!'
@@ -65,7 +68,7 @@ function slot(){
                 document.getElementById('result').innerText = 'Você perdeu, tente novamente'
             }
             count = 0;
-            clearInterval(random)
+            clearInterval(cassino)
         }
     },100)
 }
@@ -182,6 +185,9 @@ function resetTabela(){
     botao.addEventListener('click',function(){
         criarValoresNaMatriz(matrix);
         addTresPalavrasNaMatriz(palavras, matrix)
+        // REMOVE AS PALAVRAS DA BOX DE ENCONTRADOS
+        const div = document.getElementById('encontrados')
+        div.innerHTML = ''
     })
 }
 
@@ -200,16 +206,34 @@ function pesquisaPalavra(){
 
         let search = entrada.value;
         console.log(search);
+
+        let max = 0
+        if(max>3){
+
+        }
+
         if(palavrasDaMatrix.includes(search.toUpperCase())){
             counter++;  
             if(counter < 3){
                 alert("Parabéns, achou uma palavra!");
+                palavrasEcontradas(search)
             } else {
                 alert("Parabéns, você achou todas as palavras! Clique em reset para jogar de novo");
+                palavrasEcontradas(search)
                 counter = 0;
             }   
         }
     })
+}
+// RETORNA AS PALAVRAS ENCONTRADAS
+function palavrasEcontradas(x){
+    const div = document.getElementById('encontrados')
+    const p = document.createElement('p')
+    p.classList.add('pEncontrado')
+
+    p.innerText = x
+
+    div.appendChild(p)
 }
 
 
