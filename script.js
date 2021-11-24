@@ -21,37 +21,15 @@ function criaTabela(){
             arr[linha][coluna] = criaLetras()
         }
     }
-    return adicionaPalavras(arr)
+    return renderizaTabela(arr)
 }
-
-// ADICIONA A PALAVRA NA POSIÇÃO DA TABELA
-
-function adicionaPalavras(arr){
-
-    for(let i=0;i<3;i++){
-        let linha = parseInt(Math.random() * 10)
-        let posicaoPalavra = Math.floor((Math.random() * 5));
-        let palavra = palavrasArr[posicaoPalavra];
-        console.log(palavra);
-        for(let j=0;j<palavra.length;j++){
-            
-            let coluna = parseInt(Math.random() * 10)
-            if((i+palavra.length)<10){
-                arr[linha][j] = palavra[j]
-            }
-                
-        }
-    }
-    console.log(arr)
-}
-
 
 // CRIA A TABELA NO HTML E ADICIONA AS LETRAS ALEATÓRIAS NAS POSIÇÕES DA TABELA
 
 const botaoReset = document.createElement('button')
 botaoReset.innerText = 'Reset'
 
-function renderizaTabela(){
+function renderizaTabela(arr){
     const divCentro = document.getElementById('centro')
     const tableCentro = document.createElement('table')
     
@@ -63,13 +41,13 @@ function renderizaTabela(){
         const trCentro = document.createElement('tr')
         for(let j=0;j<10;j++){
             const thCentro = document.createElement('td')
-            thCentro.innerText = criaLetras()
+            thCentro.innerText = arr[i][j]
             trCentro.appendChild(thCentro)
         }
         tableCentro.appendChild(trCentro)
     }
     divCentro.appendChild(tableCentro)
-    botaoReset.addEventListener('click',renderizaTabela)
+    botaoReset.addEventListener('click',criaTabela)
 }
 
 
