@@ -26,10 +26,11 @@ div.quest {
     justify-content: space-around;
 }
 
-p.red {
+a.red {
 
     font-size: 50px;
     color: red;
+    text-decoration: none;
 
 }
 p.red:hover {
@@ -38,10 +39,11 @@ p.red:hover {
 
 }
 
-p.blue {
+a.blue {
 
     color: blue;
     font-size: 50px;
+    text-decoration: none;
 }
 
 p.blue:hover {
