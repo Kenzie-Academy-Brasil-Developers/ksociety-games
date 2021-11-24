@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link id="s1" rel="stylesheet" href="/jogo1/style.css">
+    <link id="s2" rel="stylesheet" href="/jogo2/styleSlot.css" disabled=true>
+    <title>Caça-Palavras - Ksociety</title>
+</head>
+<body>
+    <header>
+            <h3>kenzie academy</h3>
+        
+            <h4>ksociety</h4>
+
+            
+    </header>
+
+        <!-- CONTAINER -->
+
+<section>
+
+        <div class="playerInfoBox">
+                <!-------PLAYER INFO-------->
+
+            <div class="playerInfo">
+
+                    <p class="text">digite seu nome:</p>
+    
+                <!------FORMULÁRIO----->
+                <div class="infoForm">
+                    <input type="text" placeholder="" id="name" name="name"/>
+    
+                    <button id="enviarNome">enviar</button>
+    
+    
+                </div>
+    
+            </div>
+        
+        </div>
+
+        <!--BOX GERAL-->
+
+    <div class="fullbox">
+
+
+
+            <!----------GAME------------>
+            <div class="game">
+                
+                <h1>caça palavras_</h1>
+                <div class="letterBox" id="centro"></div>
+            </div>
+
+            <!--------RESET BOX/WORDS FOUND-------->
+            <div class="game2">
+
+                            <!---CHECKBOX--->
+
+                <div class="checkBox">
+                        <p class="text">palavras que encontrou:</p>
+                        <!-- FORMULÁRIO PALAVRAS ENCONTRADAS -->
+                    <div class="infoForm">
+                        <input type="text" placeholder="" id="word" name="word">
+
+                        <button id="pesquisar">enviar</button>
+                        
+                    </div>
+                    <div class="found" id="encontrados"></div>
+                </div>
+
+                <!--------- RESET ---------->
+                <button id="reset">reset</button>
+        </div>
+    </div>
+
+
+</section>
+<footer>
+    <nav>
+        jogos:
+        <a id="activate1" href="#">1</a>
+        <a id="activate2" href="/jogo2/indexCasino.html">2</a>
+    </nav>
+</footer>
+
+    <script type="text/javascript" src="/script.js"></script>
+    <script>
+                    function changeToOne() {
+                const s1 = document.getElementById('s1');
+                const s2 = document.getElementById('s2');
+
+                s2.disabled = true;
+                s1.disabled = false; 
+            }
+
+            function changeToTwo() {
+                const s1 = document.getElementById('s1');
+                const s2 = document.getElementById('s2');
+
+                s1.disabled = true;
+                s2.disabled = false;
+            }
+
+            const activate1 = document.getElementById('activate1');
+            const activate2 = document.getElementById('activate2');
+
+            activate1.addEventListener('click', changeToOne);
+            activate2.addEventListener('click', changeToTwo);
+    </script>
+</body>
+</html>

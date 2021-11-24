@@ -30,48 +30,6 @@ function criaTabela(){
 
 // CRIA A TABELA NO HTML E ADICIONA AS LETRAS ALEATÓRIAS NAS POSIÇÕES DA TABELA
 
-
-// CASSINO
-
-const numeros = [1,2,3,4,5,6,7,8,9]
-let count = 0;
-
-function slot(){
-    const cassino = setInterval(function(){
-        count++
-
-        let esquerda = Math.floor(Math.random() *9)
-        let centro = Math.floor(Math.random() *9)
-        let direita = Math.floor(Math.random() *9)
-
-        let slotMeio = document.getElementById('slot-esqueda')
-        slotMeio.firstElementChild.src = '/slot/'+esquerda+'.png'
-        let slotCentro = document.getElementById('slot-centro')
-        slotCentro.firstElementChild.src = '/slot/'+centro+'.png'
-        let slotDireita = document.getElementById('slot-direita')
-        slotDireita.firstElementChild.src = '/slot/'+direita+'.png'
-
-        if(count > 20){
-            let finalEsquerda = numeros[esquerda]
-            slotMeio.firstElementChild.src = '/slot/'+finalEsquerda+'.png'
-            let finalCentro = numeros[centro]
-            slotCentro.firstElementChild.src = '/slot/'+finalCentro+'.png'
-            let finalDireita = numeros[direita]
-            slotDireita.firstElementChild.src = '/slot/'+finalDireita+'.png'
-
-            if((finalEsquerda===finalDireita)&&(finalEsquerda===finalCentro)&&(finalDireita===finalCentro)){
-                document.getElementById('result').innerText = 'Você acertou as 3 posições e ganhou!'
-            }
-            else if((finalEsquerda===finalCentro) || (finalEsquerda===finalDireita) || (finalDireita===finalCentro)){
-                document.getElementById('result').innerText = 'Você acertou 2 posições e ganhou metade do premio!'
-            }else{
-                document.getElementById('result').innerText = 'Você perdeu, tente novamente'
-            }
-            count = 0;
-            clearInterval(cassino)
-        }
-    },100)
-}
 let matrix = [];
 
 //Cria uma matriz 10x10 
@@ -181,6 +139,8 @@ function renderizaTabela(matrix){
     divCentro.appendChild(tableCentro)
 }
 
+let counter = 0;
+
 function resetTabela(){
     botao.addEventListener('click',function(){
         criarValoresNaMatriz(matrix);
@@ -188,13 +148,26 @@ function resetTabela(){
         // REMOVE AS PALAVRAS DA BOX DE ENCONTRADOS
         const div = document.getElementById('encontrados')
         div.innerHTML = ''
+        counter = 0;
     })
 }
 
+const nomeJogador = document.getElementById('name');
+const botaoEnviarNome = document.getElementById('enviarNome');
+let nomeDoInput = '';
+
+function buscarNomeJogador(){
+
+    botaoEnviarNome.addEventListener('click', function(){
+        console.log(nomeJogador.value);
+        nomeDoInput = nomeJogador.value;
+    })
+}
+
+buscarNomeJogador();
+
 const botaoPesquisar = document.getElementById('pesquisar');
 const entrada = document.getElementById('word');
-
-let counter = 0;
 
 
 /**Função que verifica se a palavra digitada pelo usuário está no caça-palavras
@@ -212,17 +185,22 @@ function pesquisaPalavra(){
 
         }
 
+        let posicao = palavrasDaMatrix.indexOf(search.toUpperCase());
+        console.log(posicao);
         if(palavrasDaMatrix.includes(search.toUpperCase())){
+            palavrasDaMatrix.splice(posicao, 1);
             counter++;  
             if(counter < 3){
                 alert("Parabéns, achou uma palavra!");
                 palavrasEcontradas(search)
             } else {
-                alert("Parabéns, você achou todas as palavras! Clique em reset para jogar de novo");
+                alert(`Parabéns, ${nomeDoInput}, você achou todas as palavras! Clique em reset para jogar de novo`);
                 palavrasEcontradas(search)
                 counter = 0;
-            }   
+            }
         }
+        
+        console.log(palavrasDaMatrix);
     })
 }
 // RETORNA AS PALAVRAS ENCONTRADAS
