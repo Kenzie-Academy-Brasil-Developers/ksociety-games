@@ -1,33 +1,64 @@
-palavrasArr ['Teste','Comida','Fruta','Arvore','Casa']
-
+// GERA AS LETRAS ALEATÓRIAS
 function criaLetras(){
-    let result = '';
     let numero = 0;
     let letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    let cont = parseInt(Math.random() * (10 - 1) + 1)
 
-    numero = Math.floor(Math.random() * (26 - 0) + 0)
+    numero = Math.floor(Math.random() * 26)
 
     return letras[numero]
 }
 
+
+
+// CRIA UM ARRAY 10X10 E ADICIONA AS LETRAS (criaLetras) EM CADA POSIÇÃO
+let cont = 0;
 function criaTabela(){
-    let arr = []
+    let arr = []    
     for(let linha=0;linha<10;linha++){
-        
         arr.push([])
         arr[linha].push(new Array(10));
         for(let coluna=0;coluna<10;coluna++){
             arr[linha][coluna] = criaLetras()
         }
     }
+    return adicionaPalavras(arr)
+}
+
+// ADICIONA A PALAVRA NA POSIÇÃO DA TABELA
+
+function adicionaPalavras(arr){
+
+    for(let i=0;i<3;i++){
+        let linha = parseInt(Math.random() * 10)
+        let posicaoPalavra = Math.floor((Math.random() * 5));
+        let palavra = palavrasArr[posicaoPalavra];
+        console.log(palavra);
+        for(let j=0;j<palavra.length;j++){
+            
+            let coluna = parseInt(Math.random() * 10)
+            if((i+palavra.length)<10){
+                arr[linha][j] = palavra[j]
+            }
+                
+        }
+    }
     console.log(arr)
 }
 
-function renderizaTabela(letra){
+
+// CRIA A TABELA NO HTML E ADICIONA AS LETRAS ALEATÓRIAS NAS POSIÇÕES DA TABELA
+
+const botaoReset = document.createElement('button')
+botaoReset.innerText = 'Reset'
+
+function renderizaTabela(){
     const divCentro = document.getElementById('centro')
     const tableCentro = document.createElement('table')
+    
+    const main = document.getElementsByTagName('main')[0]
+    main.appendChild(botaoReset)
     divCentro.innerHTML = ''
+    
     for(let i=0;i<10;i++){
         const trCentro = document.createElement('tr')
         for(let j=0;j<10;j++){
@@ -38,7 +69,36 @@ function renderizaTabela(letra){
         tableCentro.appendChild(trCentro)
     }
     divCentro.appendChild(tableCentro)
+    botaoReset.addEventListener('click',renderizaTabela)
+}
 
 
+// CASSINO
 
+const numeros = [1,2,3,4,5,6,7,8,9]
+let count = 0;
+
+function slot(){
+    const random = setInterval(function(){
+        count++
+
+        let esquerda = Math.floor(Math.random() *10)
+        let centro = Math.floor(Math.random() *10)
+        let direita = Math.floor(Math.random() *10)
+
+        let slotMeio = document.getElementById('slot-esqueda').innerHTML = esquerda
+        let slotCentro = document.getElementById
+        document.centro = numeros[centro]
+        document.direita = numeros[direita]
+
+        if(count > 5){
+            let finalEsquerda = numeros[esquerda]
+            let finalCentro = numeros[centro]
+            let finalDireita = numeros[direita]
+
+            if((finalEsquerda===finalCentro) || (finalEsquerda===finalDireita) || (finalDireita===finalCentro)){
+                document.getElementById('result').innerText = 'olá'
+            }
+        }
+    },100)
 }
