@@ -1,5 +1,6 @@
 
 
+
 @media screen and (max-width: 800px) {
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
@@ -17,11 +18,11 @@
 
     header {
 
-    display: flex;
-    width: auto;
-    justify-content: center;
-    height: 50px;
-    background-color:#41C93E;
+        display: flex;
+        width: auto;
+        justify-content: center;
+        height: 50px;
+        background-color:#41C93E;
 
         }
 
@@ -59,11 +60,12 @@
 
     div.tutorial {
         width: 100%;
-        height: 125px;
+        height: 144px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        margin-top: 10px;
     }
 
     /* PLAYER INFO */
@@ -196,5 +198,161 @@
         color: white;
         font-size: large;
         }
-        
     }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
+
+
+
+@media screen and (min-width: 800px) {
+    @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
+
+.fullbox {
+    padding-top:60px;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+
+
+.h4 {
+    font-size:24px;
+    padding-top:8px;
+    text-align:left;
+}
+
+    body {
+        width:1920px;
+        height:1080px;
+        background-image: url("/gif/matrix.gif");
+        background-color: black;
+        color:#FFF;
+        font-family:  'Roboto Mono', monospace;
+        width: 100%;
+        height: 1090px;
+    }
+    
+    
+    /* CABEÇALHO */
+    
+    
+    header {
+        display: flex;
+        justify-content:space-between;
+        width: auto;
+        padding-top:20px;
+        padding-left:100px;
+        padding-right:100px;
+        height: 70px;
+        background-color: #287926;
+        color:#FFF;
+    
+    }
+    
+    h3 {
+        font-size:24px;
+        padding-top:8px;
+    }
+    
+    
+    /* CONTAINER */
+    
+    
+    section {
+    }
+    
+    /* PLAYER INFO */
+    
+    div.playerInfo {
+        padding-top:50px;
+    }
+    
+    .checkBox {
+        margin-top:10px;
+    }
+    
+    .found {
+        margin-top:10px;
+        height:200px;
+        background-color: #FFF;;
+        border:2px solid white;
+    }
+
+    /* FORMULÁRIO */
+    
+    div.infoForm {
+        width:250px;
+        margin-top:10px;
+    }
+    
+    .infoForm button {
+        width:61.453px;
+        height:30px;
+        background-color: #287926;
+        color:#FFF;
+    }
+    
+    .infoForm input#name {
+        height:25px;
+    }
+
+    .infoForm input#word {
+        height:25px;
+    }
+
+    /* GAME */
+    
+    div.game {
+        width:400px;
+        height:650px;
+        text-align:center;
+        font-size: 32px;
+    }
+    
+    /* GAME 2 (START/RESET/TIMER) */
+
+    div.game2 {
+        padding-top:54px;
+    }
+
+    /* CAÇA PALAVRAS */
+
+    p.title {
+    }
+
+    .letterBox {
+        margin-top:20px;
+        height:550px;
+        background-color:#FFF;
+    }
+    
+
+    /* CHECKBOX */
+    
+    div.checkBox {
+    }
+    
+    /* START */
+    
+    button#start {
+        width:200px;
+        height:70px;
+        background-color: #287926;
+        color:#FFF;
+    }
+    /* RESET */
+
+    button#reset {
+        width:200px;
+        height:70px;
+        background-color: #287926;
+        color:#FFF;
+    }
+
+    /* TIMER */
+
+    .timer {
+
+    }
+}
+
