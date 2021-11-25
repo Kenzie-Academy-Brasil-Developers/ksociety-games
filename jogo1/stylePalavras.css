@@ -79,6 +79,16 @@ td{
         text-align:right;
         padding-right:20px;
     }
+
+    h5 {
+
+        font-size: 20px;
+        margin-top: 10px;
+        width: 100% ;
+        text-align: center;
+        margin-bottom: 5px;
+        height: 15px;
+    }
     
     /* PLAYER INFO \/ */
 
@@ -235,7 +245,6 @@ td{
         /* FOOTER */
 
         footer {
-            margin-top: 100px;
             width: 100%;
             height: 50px;
             background-color: #1dac1b;
@@ -243,7 +252,7 @@ td{
             font-size:32px;
             padding-top:15px;
             align-items:center;
-            font-size:36px;
+            font-size:36px;        
         }
 
         footer a {
@@ -308,7 +317,7 @@ td{
     
     h1 {
         font-size:44px;
-        margin-bottom:30px;
+        margin-bottom:15px;
     }
     
     h3 {
@@ -319,6 +328,11 @@ td{
     h4 {
         text-align:right;
         padding-right:50px;
+    }
+
+    h5 {
+        font-size: 25px;
+        height: 70px;
     }
     
     /* PLAYER INFO */
