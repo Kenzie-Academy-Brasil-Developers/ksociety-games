@@ -1,5 +1,4 @@
 let matrix = [];
-let stop = false
 
 //Cria uma matriz 10x10 
 for(let i = 0; i < 10; i++){
@@ -119,8 +118,6 @@ function resetTabela(){
         const div = document.getElementById('encontrados')
         div.innerHTML = ''
         counter = 0;
-        stop = true;
-        timer()
     })
 }
 
