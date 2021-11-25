@@ -30,7 +30,7 @@ h1 {
     text-align:center;
     font-size: 32px;
     margin-bottom:30px;
-    margin-top: 50px;
+
 }
 
 
@@ -118,16 +118,16 @@ main{
 /* RESULT */
 
 .result{
-    font-size: 50px;
+    font-size: 35px;
     text-align: center;
-    color: white;
-    margin-top: 70px;
+    color:#1dac1b;
+    margin-top: 30px;
     font-family: 'Roboto mono' , monospace;
 }
 
 footer {
 
-    margin-top: 100px;
+    margin-top: 20px;
     width: 100%;
     height: 50px;
     background-color: #1dac1b;
@@ -145,6 +145,16 @@ footer a {
     color:#FFF;
     font-size:34px;
 
+}
+
+#score {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 50px;
+    font-size: 15px;
+    margin-top: 10px;
 }
 
 }
@@ -206,6 +216,7 @@ main{
     height: 100%;
     justify-content:center;
     align-items:center;
+    margin-top: 100px;
 
 }
 
@@ -230,7 +241,8 @@ main{
     border-right:5px solid white;
     border-bottom:5px solid white;
     border-radius: 5px 5px 5px 5px;
-    margin-bottom:10px;
+    margin-bottom:50px;
+    margin-top: 50px;
 }
 
 /* SLOTS */
@@ -286,15 +298,25 @@ main{
     margin-top: 50px;
 }
 
+#score {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 50px;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
 footer {
     width: 100%;
     height: 50px;
     background-color: #1dac1b;
     color:#FFF;
     font-size:32px;
-    align-items: center;
     font-size:42px;
-    justify-content:center;
+    margin-top: 130px;
+
 }
 
 footer a {
