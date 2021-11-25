@@ -154,9 +154,11 @@ function pesquisaPalavra(){
             if(counter < 3){
                 alert("Parabéns, achou uma palavra!");
                 palavrasEcontradas(search)
+                entrada.value = "";
             } else {
                 alert(`Parabéns, ${nomeDoInput}, você achou todas as palavras! Clique em reset para jogar de novo!`);
                 palavrasEcontradas(search)
+                entrada.value = ""
                 counter = 0;
             }
         }
