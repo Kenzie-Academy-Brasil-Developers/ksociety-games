@@ -1,33 +1,3 @@
-/*
-
-// GERA AS LETRAS ALEATÓRIAS
-function criaLetras(){
-    let numero = 0;
-    let letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-
-    numero = Math.floor(Math.random() * 26)
-
-    return letras[numero]
-}
-
-
-
-// CRIA UM ARRAY 10X10 E ADICIONA AS LETRAS (criaLetras) EM CADA POSIÇÃO
-let cont = 0;
-function criaTabela(){
-    let arr = []    
-    for(let linha=0;linha<10;linha++){
-        arr.push([])
-        arr[linha].push(new Array(10));
-        for(let coluna=0;coluna<10;coluna++){
-            arr[linha][coluna] = criaLetras()
-        }
-    }
-    return renderizaTabela(arr)
-}
-
-*/
-
 let matrix = [];
 
 //Cria uma matriz 10x10 
@@ -180,7 +150,6 @@ function pesquisaPalavra(){
         console.log(posicao);
         if(palavrasDaMatrix.includes(search.toUpperCase())){
             palavrasDaMatrix.splice(posicao, 1);
-            entrada.value = "";
             counter++;  
             if(counter < 3){
                 alert("Parabéns, achou uma palavra!");

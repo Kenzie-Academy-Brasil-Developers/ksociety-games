@@ -87,6 +87,9 @@ main{
     font-size: 50px;
     border-left:5px solid white;
     border-radius: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .slot p{
     margin-top: 20px;
@@ -114,6 +117,7 @@ main{
     font-size: 50px;
     text-align: center;
     color: white;
+    margin-top: 70px;
 }
 
 }
@@ -212,9 +216,15 @@ main{
     font-size: 50px;
     border-left:5px solid white;
     border-radius: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .slot p{
     margin-top: 20px;
+}
+.slot img{
+    width: 200px;
 }
 
 /* START */
@@ -236,6 +246,7 @@ main{
     color: white;
     border-radius: 5px 5px 5px 5px;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 /* RESULT */
@@ -244,5 +255,6 @@ main{
     font-size: 50px;
     text-align: center;
     color: white;
+    margin-top: 70px;
 }
 }
