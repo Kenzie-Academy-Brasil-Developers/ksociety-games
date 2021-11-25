@@ -191,3 +191,24 @@ resetTabela();
 pesquisaPalavra();
 console.log(palavrasDaMatrix);
 console.table(addTresPalavrasNaMatriz(palavras, matrix));
+
+document.addEventListener("keypress", function(e){
+    if(e.key === 'Enter'){
+        let search = entrada.value;
+        let posicao = palavrasDaMatrix.indexOf(search.toUpperCase());
+        console.log(posicao);
+        if(palavrasDaMatrix.includes(search.toUpperCase())){
+            palavrasDaMatrix.splice(posicao, 1);
+            counter++;  
+            if(counter < 3){
+                alert("Parabéns, achou uma palavra!");
+                palavrasEcontradas(search)
+                entrada.value = "";
+            } else {
+                alert(`Parabéns, ${nomeDoInput}, você achou todas as palavras! Clique em reset para jogar de novo!`);
+                palavrasEcontradas(search)
+                counter = 0;
+            }
+        }
+    }
+})
