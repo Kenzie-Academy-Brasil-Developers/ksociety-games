@@ -12,6 +12,23 @@
     
     }
     
+    #toggleSoundtrack {
+        height:40px;
+    }
+
+    #soundtrackmp3 {
+        cursor:pointer;
+        width:125px;
+        height:40px;
+        background-color: #FFF;
+        color:#000;
+        font-size:22px;
+        font-variant: small-caps;
+        border: 0px;
+        font-family: 'Roboto Mono', monospace;
+        border-radius: 5px 5px 5px 5px;
+    }
+
     main {
         display: flex;
         align-items:center;
@@ -113,6 +130,7 @@
     }
 
     #soundtrackmp3 {
+        cursor:pointer;
         width:125px;
         height:40px;
         background-color: #FFF;
