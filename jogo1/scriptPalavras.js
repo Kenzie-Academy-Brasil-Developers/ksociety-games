@@ -1,4 +1,5 @@
 let matrix = [];
+let stop = false
 
 //Cria uma matriz 10x10 
 for(let i = 0; i < 10; i++){
@@ -25,10 +26,8 @@ function addPalavrasNaMatrizHorizontal(palavra, matrix, linha){
     const offset = Math.floor((1+10-palavra.length)*Math.random())
     console.log('offset'+offset);
     for(let i = 0; i < palavra.length; i++){
-
         if(i+offset<10)
         matrix[linha][i+offset] = palavra[i].toUpperCase();
-
     }
 
     return matrix;
@@ -120,6 +119,8 @@ function resetTabela(){
         const div = document.getElementById('encontrados')
         div.innerHTML = ''
         counter = 0;
+        stop = true;
+        timer()
     })
 }
 
@@ -178,6 +179,39 @@ function palavrasEcontradas(x){
     div.appendChild(p)
 }
 
+/*
+
+// TIMER CAÇA PALAVRAS
+
+function timer(){
+    stop = false;
+    
+    let contTimer = 0
+    let min = 0;
+    const timer = document.getElementById('timer')
+    setInterval(function(){
+        contTimer++
+        
+        if(contTimer===60){
+            contTimer = 0
+            min++
+            timer.innerText = '0'+min+':0'+(contTimer)
+        }else if(contTimer>9){
+            timer.innerText = '0'+min+':'+(contTimer)
+        }else{
+            timer.innerText = '0'+min+':0'+(contTimer)
+        }
+
+        if(stop===true){
+            clearInterval(timer)
+            timer.innerText = '00:00'
+        }
+    },1000)
+}
+
+*/
+
+
 
 // TOGGLE NAME ESCONDE A BARA DE NOME
 function toggleName() {
@@ -216,3 +250,12 @@ document.addEventListener("keypress", function(e){
         }
     }
 })
+
+function apareceTudo(){
+    
+    const centro1 = document.getElementById('centro')
+    centro1.style.display = 'block'
+}
+
+botaoTimer = document.getElementById('enviarNome')
+botaoTimer.addEventListener('click',apareceTudo)
