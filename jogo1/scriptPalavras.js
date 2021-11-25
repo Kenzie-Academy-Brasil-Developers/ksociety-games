@@ -207,6 +207,7 @@ document.addEventListener("keypress", function(e){
             } else {
                 alert(`Parabéns, ${nomeDoInput}, você achou todas as palavras! Clique em reset para jogar de novo!`);
                 palavrasEcontradas(search)
+                entrada.value = "";
                 counter = 0;
             }
         }
