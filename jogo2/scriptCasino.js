@@ -8,6 +8,8 @@ let derrotas = 0;
 function slot(){
     const som = new Audio('/jogo2/slot-sound.mp3')
     som.play()
+    const start = document.getElementById('start').removeAttribute("onclick");
+
     const cassino = setInterval(function(){
         count++
 
@@ -47,6 +49,7 @@ function slot(){
                 
                 //mostraDerrotas.innerText = `Derrotas: ${derrotas}`
             }
+            const start = document.getElementById('start').setAttribute("onclick","slot()");
             count = 0;
             clearInterval(cassino)
         }
