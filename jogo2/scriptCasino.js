@@ -10,7 +10,6 @@ function slot(){
         count++
 
         let mostraVitorais = document.getElementById('vitorias');
-        let mostraDerrotas = document.getElementById('derrotas');
 
 
         let esquerda = Math.floor(Math.random() *9)
@@ -35,16 +34,16 @@ function slot(){
             if((finalEsquerda===finalDireita)&&(finalEsquerda===finalCentro)&&(finalDireita===finalCentro)){
                 document.getElementById('result').innerText = 'Você acertou as 3 posições e ganhou!'
                 vitorias++;
-                mostraVitorais.innerText = `Vitórias: ${vitorias}`
+                mostraVitorais.innerText = `score: ${vitorias}`
             }
             else if((finalEsquerda===finalCentro) || (finalEsquerda===finalDireita) || (finalDireita===finalCentro)){
                 document.getElementById('result').innerText = 'Você acertou 2 posições e ganhou metade do premio!'
-                derrotas++;
-                mostraDerrotas.innerText = `Derrotas: ${derrotas}`
+                vitorias+= 0.5;
+                mostraVitorais.innerText = `score: ${vitorias}`
             }else{
                 document.getElementById('result').innerText = 'Você perdeu, tente novamente'
-                derrotas++;
-                mostraDerrotas.innerText = `Derrotas: ${derrotas}`
+                
+                //mostraDerrotas.innerText = `Derrotas: ${derrotas}`
             }
             count = 0;
             clearInterval(cassino)
