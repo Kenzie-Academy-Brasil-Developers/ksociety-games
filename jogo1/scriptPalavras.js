@@ -224,9 +224,6 @@ criarValoresNaMatriz(matrix);
 resetTabela();
 pesquisaPalavra();
 console.log(palavrasDaMatrix);
-<<<<<<< HEAD
-console.table(addTresPalavrasNaMatriz(palavras, matrix));
-=======
 console.table(addTresPalavrasNaMatriz(palavras, matrix));
 
 document.addEventListener("keypress", function(e){
@@ -259,4 +256,3 @@ function apareceTudo(){
 
 botaoTimer = document.getElementById('enviarNome')
 botaoTimer.addEventListener('click',apareceTudo)
->>>>>>> 311818462b04e7d005c73c9be983e38936d67c33
