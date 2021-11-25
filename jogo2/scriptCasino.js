@@ -6,6 +6,8 @@ let vitorias = 0;
 let derrotas = 0;
 
 function slot(){
+    const som = new Audio('/jogo2/slot-sound.mp3')
+    som.play()
     const cassino = setInterval(function(){
         count++
 
@@ -23,7 +25,7 @@ function slot(){
         let slotDireita = document.getElementById('slot-direita')
         slotDireita.firstElementChild.src = '/slot/'+direita+'.png'
 
-        if(count > 20){
+        if(count > 29){
             let finalEsquerda = numeros[esquerda]
             slotMeio.firstElementChild.src = '/slot/'+finalEsquerda+'.png'
             let finalCentro = numeros[centro]
@@ -32,12 +34,12 @@ function slot(){
             slotDireita.firstElementChild.src = '/slot/'+finalDireita+'.png'
 
             if((finalEsquerda===finalDireita)&&(finalEsquerda===finalCentro)&&(finalDireita===finalCentro)){
-                document.getElementById('result').innerText = 'Você acertou as 3 posições e ganhou!'
+                document.getElementById('result').innerText = 'Você acertou as 3 posições e ganhou 1 ponto!'
                 vitorias++;
                 mostraVitorais.innerText = `score: ${vitorias}`
             }
             else if((finalEsquerda===finalCentro) || (finalEsquerda===finalDireita) || (finalDireita===finalCentro)){
-                document.getElementById('result').innerText = 'Você acertou 2 posições e ganhou metade do premio!'
+                document.getElementById('result').innerText = 'Você acertou 2 posições e ganhou 0.5 ponto!'
                 vitorias+= 0.5;
                 mostraVitorais.innerText = `score: ${vitorias}`
             }else{
