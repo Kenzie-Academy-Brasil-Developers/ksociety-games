@@ -22,9 +22,12 @@ const palavras = ['css', 'kenzie', 'programa', 'objeto', 'variavel', 'dev', 'hac
 
 function addPalavrasNaMatrizHorizontal(palavra, matrix, linha){
     
+    const offset = Math.floor((1+10-palavra.length)*Math.random())
+    console.log('offset'+offset);
     for(let i = 0; i < palavra.length; i++){
 
-        matrix[linha][i] = palavra[i].toUpperCase();
+        if(i+offset<10)
+        matrix[linha][i+offset] = palavra[i].toUpperCase();
 
     }
 
