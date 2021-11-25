@@ -156,6 +156,7 @@ function pesquisaPalavra(){
                 palavrasEcontradas(search)
             } else {
                 alert(`Parabéns, ${nomeDoInput}, você achou todas as palavras! Clique em reset para jogar de novo`);
+                palavrasEcontradas(search)
                 counter = 0;
             }
         }
