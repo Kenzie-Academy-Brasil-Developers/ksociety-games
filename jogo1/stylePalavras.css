@@ -1,10 +1,10 @@
 table{
-    width: 400px;
+    width: 230px;
     height: 100%;
     margin: auto;
 }
 tr{
-    background-color: #1b9219;
+    background-color: #1dac1b;
     
 }
 td{
@@ -33,10 +33,10 @@ td{
    
    body {
         background-color: black;
-        color:#41C93E;
+        color:#1dac1b; 
         font-family:  'Roboto Mono', monospace;
         width: 100%;
-        height: 1090px;
+        height: 700px;
         font-variant: small-caps;
     }
     
@@ -46,7 +46,7 @@ td{
     /* CONTAINER \/ */
 
     .fullbox {
-    padding-top:60px;
+    padding-top:10px;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -57,17 +57,16 @@ td{
     header {
         display: flex;
         justify-content:space-between;
+        align-items: center;
         width: 100%;
-        padding-bottom:20px;
-        padding-top:20px;
-        height: 40px;
+        height: 50px;
         background-color: #1dac1b;
         color:#FFF;
-        font-size: 38px;
+        font-size: 25px;
     }
     
     h1 {
-        font-size: 42px;
+        font-size: 36px;
     }
 
 
@@ -91,39 +90,56 @@ td{
     
     .text {
         text-align:center;
-        font-size:34px;
+        font-size:22px;
+        color:#1dac1b;
     }
 
     div.playerInfo {
+
         font-size:24px;
-        width:400px;
+        width: 230px;
         padding-top:10px;
     }
 
         /* FORMULÁRIOS \/ */
     
         div.infoForm {
-            padding-top:30px;
-            width:400px;
-            margin-bottom:20px;
+            
+            width: 230px;
+            margin-bottom:10px;
             border: 0px;
             font-family: 'Roboto Mono', monospace;
             color: white;
             border-radius: 5px 5px 5px 5px;
         }
         
-        .infoForm button {
-            width:403px;
-            height:60px;
+        .toggle {
+
+        }
+
+        .infoForm button { 
+            margin-top:10px;
+            margin-left:25%;
+            width:125px;
+            height:40px;
             background-color: #1dac1b;
             color:#FFF;
-            font-size:32px;
+            font-size:22px;
             font-variant: small-caps;
             border: 0px;
             font-family: 'Roboto Mono', monospace;
             color: white;
             border-radius: 5px 5px 5px 5px;
     
+        }
+
+        .infoForm button:hover {
+            background-color: #FFF;
+            color: #41C93E;
+    }
+
+        .button#pesquisar {
+            font-size:22px;
         }
         
         .input {
@@ -135,32 +151,31 @@ td{
         .infoForm input#name {
             font-size:22px;
             height:35px;
-            width:395px;
+            width:97.3%;
             margin-top:10px;
         }
     
         .infoForm input#word {
             font-size:22px;
             height:35px;
-            width:395px;
+            width:100%;
             margin-top:10px;
         }
     
 
         div.game {
-            width:400px;
+            width: 230px;
             height:600px;
             text-align:center;
-            font-size: 32px;
+            font-size: 22px;
             
         }
         
         /* RESET/FOUND BOX */
     
         div.game2 {
-            width:400px;
+            width: 230px;
             height:600px;
-            padding-top:40px;
         }
     
         /* CAÇA PALAVRAS */
@@ -169,7 +184,10 @@ td{
         }
     
         .letterBox {
-            width:400px;
+            padding-left:5px;
+            padding-right:5px;
+            background-color: #1dac1b;
+            width: 230px;
             margin-top:30px;
             height:550px;
             
@@ -179,14 +197,14 @@ td{
         /* CHECKBOX */
         
         .checkBox {
-            width:400px;
+            width: 230px;
             margin-top:40px;
             font-size:24px;
             margin-bottom:80px;
         }
         
         .found {
-            width:400px;
+            width: 238px;
             margin-top:10px;
             height:208px;
             background-color: #FFF;;
@@ -197,7 +215,7 @@ td{
         /* RESET */
     
         button#reset {
-            width:100%;
+            width: 238px;
             height:70px;
             background-color: #1dac1b;
             color:#FFF;
@@ -208,6 +226,11 @@ td{
             color: white;
             border-radius: 5px 5px 5px 5px;
         }
+
+        button#reset:hover {
+            background-color: #FFF;
+            color: #41C93E;
+    }
 
         /* FOOTER */
 
@@ -220,13 +243,14 @@ td{
             font-size:32px;
             padding-top:15px;
             align-items:center;
-            font-size:42px;
+            font-size:36px;
         }
 
         footer a {
+            padding-left:20px;
             text-decoration:none;
             color:#FFF;
-            font-size:34px;
+            font-size:25px;
         }
 
 }
@@ -243,8 +267,8 @@ td{
 
     body {
         width:100%;
-        height: 1400px;
-        background-image: url("/gif/matrix.gif");
+        height: 100%;
+        background-image: url("/medias/matrix.gif");
         background-repeat: no-repeat;
         background-size: cover;
         background-color: black;
@@ -262,7 +286,7 @@ td{
     .fullbox {
         display:flex;
         justify-content:space-evenly;
-        margin-top:150px;
+        margin-top:30px;
     }
     
     /* CABEÇALHO */
@@ -272,7 +296,7 @@ td{
         display:flex;
         justify-content:space-between;
         width: 100%;
-        height: 100px;
+        height: 50px;
         background-color: #1dac1b;
         color:#FFF;
         font-size:42px;
@@ -284,6 +308,7 @@ td{
     
     h1 {
         font-size:44px;
+        margin-bottom:30px;
     }
     
     h3 {
@@ -300,16 +325,16 @@ td{
     
     .playerInfoBox {
         display:flex;
-        justify-content:space-around;
+        justify-content:center;
     }
 
     .text {
-        font-size:32px;
+        font-size:28px;
         text-align:center;
     }
 
     div.playerInfo {
-        margin-top:80px;
+        margin-top:30px;
         font-size:24px;
     }
 
@@ -318,7 +343,7 @@ td{
     
     div.infoForm {
         display:flex;
-        width:400px;
+        width:300px;
     }
 
     .infoForm button:hover {
@@ -326,9 +351,16 @@ td{
         color: #41C93E;
     }
     
+    .infoForm button#enviarNome {
+        margin-left:25%;
+    }
+
+    .infoForm button#pesquisar{
+    }
+
     .infoForm button {
         margin-top:20px;
-        width:100px;
+        width:150px;
         height:40px;
         color:#FFF;
         background-color: #1dac1b;
@@ -343,14 +375,16 @@ td{
     .infoForm input#name {
         font-size:22px;
         height:35px;
-        width:400px;
+        width:300px;
         margin-top:20px;
     }
+
+  
 
     .infoForm input#word {
         font-size:22px;
         height:35px;
-        width:400px;
+        width:200px;
         margin-bottom:20px;
         margin-top:20px;
     }
@@ -358,8 +392,8 @@ td{
     /* GAME */
     
     div.game {
-        width:400px;
-        height:600px;
+        width:300px;
+        height:800px;
         text-align:center;
         font-size: 32px;
     }
@@ -367,7 +401,7 @@ td{
     /* RESET/FOUND BOX */
 
     div.game2 {
-        width:400px;
+        width:300px;
         height:600px;
         padding-top:40px;
     }
@@ -378,23 +412,26 @@ td{
     }
 
     .letterBox {
-        width:400px;
-        margin-top:50px;
+        background-color: #1dac1b;
+        width:300px;
+        margin-top:20px;
         height:550px;
+        padding-top:30px;
+        padding-bottom:30px;
     }
     
 
     /* CHECKBOX */
     
     .checkBox {
-        width:400px;
+        width:300px;
         margin-top:40px;
         font-size:24px;
-        margin-bottom:170px;
+        margin-bottom:70px;
     }
     
     .found {
-        width:400px;
+        width:300px;
         margin-top:10px;
         height:208px;
         background-color: #FFF;;
@@ -416,21 +453,26 @@ td{
         font-variant: small-caps;
     }
 
+    button#reset:hover {
+            background-color: #FFF;
+            color: #41C93E;
+    }
+
     /* FOOTER */
 
     footer {
-        margin-top: 215px;
-        width: 100%;
-        height: 80px;
+        height:50px;
         background-color: #1dac1b;
         color:#FFF;
         font-size:32px;
-        padding-top:40px;
         align-items:center;
         font-size:42px;
+        margin-top: 50px;
+        padding-top:5px;
     }
 
     footer a {
+        padding-left:10px;
         text-decoration:none;
         color:#FFF;
         font-size:34px;
