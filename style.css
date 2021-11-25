@@ -46,6 +46,7 @@
     div.quest {
         height:100px;
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
     }
     
@@ -91,7 +92,18 @@
         footer a:hover{
             color:#1480fb;
         }
+
+    img{
+        width: 20%;
+        height: 20%;
+    }
     
+    #creditos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+    }
 }
 @media screen and (min-width: 800px) {
     @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
@@ -105,7 +117,7 @@
     }
     
     main {
-        margin-top:200px;
+        margin-top:10px;
         display: flex;
         align-items:center;
         justify-content: center;
@@ -135,6 +147,8 @@
     div.quest {
         height:130px;
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-between;
     }
     
@@ -179,4 +193,19 @@
     footer a:hover{
         color:#1480fb;
     }
+
+    img{
+        width: 20%;
+        height: 20%;
+    }
+    
+    #creditos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 20px;
+        width: 100%;
+        margin-top: 100px;
+    }
+    
 }
