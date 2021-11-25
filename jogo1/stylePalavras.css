@@ -36,7 +36,7 @@ td{
         color:#41C93E;
         font-family:  'Roboto Mono', monospace;
         width: 100%;
-        height: 1090px;
+        height: 700px;
         font-variant: small-caps;
     }
     
@@ -46,7 +46,7 @@ td{
     /* CONTAINER \/ */
 
     .fullbox {
-    padding-top:60px;
+    padding-top:10px;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -57,13 +57,12 @@ td{
     header {
         display: flex;
         justify-content:space-between;
+        align-items: center;
         width: 100%;
-        padding-bottom:20px;
-        padding-top:20px;
-        height: 40px;
+        height: 50px;
         background-color: #1dac1b;
         color:#FFF;
-        font-size: 38px;
+        font-size: 25px;
     }
     
     h1 {
@@ -160,7 +159,6 @@ td{
         div.game2 {
             width:400px;
             height:600px;
-            padding-top:40px;
         }
     
         /* CAÇA PALAVRAS */
@@ -243,7 +241,7 @@ td{
 
     body {
         width:100%;
-        height: 1400px;
+        height: 100%px;
         background-image: url("/gif/matrix.gif");
         background-repeat: no-repeat;
         background-size: cover;
@@ -262,7 +260,7 @@ td{
     .fullbox {
         display:flex;
         justify-content:space-evenly;
-        margin-top:150px;
+        margin-top:30px;
     }
     
     /* CABEÇALHO */
@@ -272,7 +270,7 @@ td{
         display:flex;
         justify-content:space-between;
         width: 100%;
-        height: 100px;
+        height: 50px;
         background-color: #1dac1b;
         color:#FFF;
         font-size:42px;
@@ -300,7 +298,7 @@ td{
     
     .playerInfoBox {
         display:flex;
-        justify-content:space-around;
+        justify-content:center;
     }
 
     .text {
@@ -309,7 +307,7 @@ td{
     }
 
     div.playerInfo {
-        margin-top:80px;
+        margin-top:30px;
         font-size:24px;
     }
 
@@ -419,15 +417,13 @@ td{
     /* FOOTER */
 
     footer {
-        margin-top: 215px;
-        width: 100%;
-        height: 80px;
+
         background-color: #1dac1b;
         color:#FFF;
         font-size:32px;
-        padding-top:40px;
         align-items:center;
         font-size:42px;
+        margin-top: 70px;
     }
 
     footer a {

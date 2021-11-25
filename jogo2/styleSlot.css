@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
+
 @media screen and (max-width: 800px){
 
 body {
@@ -5,7 +7,7 @@ body {
     color:#41C93E;
     font-family:  'Roboto Mono', monospace;
     width: 100%;
-    height: 1090px;
+    height: 100%;
     font-variant: small-caps;
 }
 
@@ -14,13 +16,12 @@ body {
 header {
     display: flex;
     justify-content:space-between;
-    padding-bottom:20px;
-    padding-top:20px;
     height: 40px;
     background-color: #1dac1b;
     color:#FFF;
     font-size: 22px;
-    margin-bottom:150px;
+    margin-bottom:30px;
+    align-items: center;
 }
 
 /* TÍTULOS */
@@ -28,7 +29,8 @@ header {
 h1 {
     text-align:center;
     font-size: 36px;
-    margin-bottom:70px;
+    margin-bottom:30px;
+    margin-top: 50px;
 }
 
 
@@ -99,7 +101,7 @@ main{
 
 #start{
     width:100%;
-    height:60px;
+    height:100%;
     background-color: #1dac1b;
     color:#FFF;
     font-size:32px;
@@ -108,7 +110,6 @@ main{
     font-family: 'Roboto Mono', monospace;
     color: white;
     border-radius: 5px 5px 5px 5px;
-    margin-top: 30px;
 }
 
 /* RESULT */
@@ -118,9 +119,11 @@ main{
     text-align: center;
     color: white;
     margin-top: 70px;
+    font-family: 'Roboto mono' , monospace;
 }
 
 footer {
+
     margin-top: 100px;
     width: 100%;
     height: 50px;
@@ -130,6 +133,8 @@ footer {
     padding-top:15px;
     align-items:center;
     font-size:42px;
+    margin-top: 214px;
+    
 }
 
 footer {
@@ -152,7 +157,7 @@ body {
     color:#FFF;
     font-family:  'Roboto Mono', monospace;
     width: 100%;
-    height: 1090px;
+    height: 100%;
     font-variant: small-caps;
 }
 
@@ -162,13 +167,12 @@ header {
     display: flex;
     justify-content:space-between;
     width: 100%;
-    padding-bottom:20px;
-    padding-top:45px;
-    height: 100px;
+    height: 60px;
     background-color: #1dac1b;
     color:#FFF;
-    font-size: 72px;
+    font-size: 30px;
     margin-bottom:170px;
+    align-items: center;
 }
 
 /* TÍTULOS */
@@ -182,12 +186,12 @@ h1 {
 
 h3 {
     text-align:left;
-    padding-left:20px;
+    padding-left:40px;
 }
 
 h4 {
     text-align:right;
-    padding-right:20px;
+    padding-right:40px;
 }
 
 /* MAIN */
