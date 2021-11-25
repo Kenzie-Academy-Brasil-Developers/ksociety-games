@@ -44,6 +44,8 @@
     div.quest {
         height:200px;
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-around;
     }
     
@@ -89,6 +91,11 @@
         footer a:hover{
             color:#1480fb;
         }
+
+    img{
+        width: 20%;
+        height: 20%;
+    }    
 }
 @media screen and (min-width: 800px) {
     @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
@@ -132,6 +139,8 @@
     div.quest {
         height:130px;
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-between;
     }
     
@@ -176,4 +185,9 @@
     footer a:hover{
         color:#1480fb;
     }
+
+    img{
+        width: 20%;
+        height: 20%;
+    } 
 }
