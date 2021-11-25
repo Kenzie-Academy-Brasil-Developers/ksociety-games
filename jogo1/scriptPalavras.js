@@ -175,6 +175,15 @@ function palavrasEcontradas(x){
     div.appendChild(p)
 }
 
+// TOGGLE NAME ESCONDE A BARA DE NOME
+function toggleName() {
+    var x = document.getElementById("toggle");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
 
 criarValoresNaMatriz(matrix);
 resetTabela();

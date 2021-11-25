@@ -1,5 +1,5 @@
 table{
-    width: 400px;
+    width: 230px;
     height: 100%;
     margin: auto;
 }
@@ -66,7 +66,7 @@ td{
     }
     
     h1 {
-        font-size: 42px;
+        font-size: 36px;
     }
 
 
@@ -90,39 +90,51 @@ td{
     
     .text {
         text-align:center;
-        font-size:34px;
+        font-size:22px;
+        color:#1dac1b;
     }
 
     div.playerInfo {
+
         font-size:24px;
-        width:400px;
+        width: 230px;
         padding-top:10px;
     }
 
         /* FORMULÁRIOS \/ */
     
         div.infoForm {
-            padding-top:30px;
-            width:400px;
-            margin-bottom:20px;
+            
+            width: 230px;
+            margin-bottom:10px;
             border: 0px;
             font-family: 'Roboto Mono', monospace;
             color: white;
             border-radius: 5px 5px 5px 5px;
         }
         
-        .infoForm button {
-            width:403px;
-            height:60px;
+        .toggle {
+
+        }
+
+        .infoForm button { 
+            margin-top:10px;
+            margin-left:25%;
+            width:125px;
+            height:40px;
             background-color: #1dac1b;
             color:#FFF;
-            font-size:32px;
+            font-size:22px;
             font-variant: small-caps;
             border: 0px;
             font-family: 'Roboto Mono', monospace;
             color: white;
             border-radius: 5px 5px 5px 5px;
     
+        }
+
+        .button#pesquisar {
+            font-size:22px;
         }
         
         .input {
@@ -134,20 +146,20 @@ td{
         .infoForm input#name {
             font-size:22px;
             height:35px;
-            width:395px;
+            width:97.3%;
             margin-top:10px;
         }
     
         .infoForm input#word {
             font-size:22px;
             height:35px;
-            width:395px;
+            width:97.3%;
             margin-top:10px;
         }
     
 
         div.game {
-            width:400px;
+            width: 230px;
             height:600px;
             text-align:center;
             font-size: 32px;
@@ -157,7 +169,7 @@ td{
         /* RESET/FOUND BOX */
     
         div.game2 {
-            width:400px;
+            width: 230px;
             height:600px;
         }
     
@@ -167,7 +179,7 @@ td{
         }
     
         .letterBox {
-            width:400px;
+            width: 230px;
             margin-top:30px;
             height:550px;
             
@@ -177,14 +189,14 @@ td{
         /* CHECKBOX */
         
         .checkBox {
-            width:400px;
+            width: 230px;
             margin-top:40px;
             font-size:24px;
             margin-bottom:80px;
         }
         
         .found {
-            width:400px;
+            width: 230px;
             margin-top:10px;
             height:208px;
             background-color: #FFF;;
@@ -218,13 +230,14 @@ td{
             font-size:32px;
             padding-top:15px;
             align-items:center;
-            font-size:42px;
+            font-size:36px;
         }
 
         footer a {
+            padding-left:20px;
             text-decoration:none;
             color:#FFF;
-            font-size:34px;
+            font-size:25px;
         }
 
 }
@@ -282,6 +295,7 @@ td{
     
     h1 {
         font-size:44px;
+        margin-bottom:30px;
     }
     
     h3 {
@@ -302,7 +316,7 @@ td{
     }
 
     .text {
-        font-size:32px;
+        font-size:28px;
         text-align:center;
     }
 
@@ -316,7 +330,7 @@ td{
     
     div.infoForm {
         display:flex;
-        width:400px;
+        width:300px;
     }
 
     .infoForm button:hover {
@@ -324,9 +338,16 @@ td{
         color: #41C93E;
     }
     
+    .infoForm button#enviarNome {
+        margin-left:25%;
+    }
+
+    .infoForm button#pesquisar{
+    }
+
     .infoForm button {
         margin-top:20px;
-        width:100px;
+        width:150px;
         height:40px;
         color:#FFF;
         background-color: #1dac1b;
@@ -341,14 +362,14 @@ td{
     .infoForm input#name {
         font-size:22px;
         height:35px;
-        width:400px;
+        width:300px;
         margin-top:20px;
     }
 
     .infoForm input#word {
         font-size:22px;
         height:35px;
-        width:400px;
+        width:200px;
         margin-bottom:20px;
         margin-top:20px;
     }
@@ -356,8 +377,8 @@ td{
     /* GAME */
     
     div.game {
-        width:400px;
-        height:600px;
+        width:300px;
+        height:800px;
         text-align:center;
         font-size: 32px;
     }
@@ -365,7 +386,7 @@ td{
     /* RESET/FOUND BOX */
 
     div.game2 {
-        width:400px;
+        width:300px;
         height:600px;
         padding-top:40px;
     }
@@ -376,23 +397,26 @@ td{
     }
 
     .letterBox {
-        width:400px;
-        margin-top:50px;
+        background-color: #1b9219;
+        width:300px;
+        margin-top:40px;
         height:550px;
+        padding-top:30px;
+        padding-bottom:30px;
     }
     
 
     /* CHECKBOX */
     
     .checkBox {
-        width:400px;
+        width:300px;
         margin-top:40px;
         font-size:24px;
         margin-bottom:170px;
     }
     
     .found {
-        width:400px;
+        width:300px;
         margin-top:10px;
         height:208px;
         background-color: #FFF;;
@@ -417,16 +441,18 @@ td{
     /* FOOTER */
 
     footer {
-
+        height:50px;
         background-color: #1dac1b;
         color:#FFF;
         font-size:32px;
         align-items:center;
         font-size:42px;
-        margin-top: 70px;
+        margin-top: 50px;
+        padding-top:5px;
     }
 
     footer a {
+        padding-left:10px;
         text-decoration:none;
         color:#FFF;
         font-size:34px;
