@@ -21,19 +21,19 @@ function slot(){
         let direita = Math.floor(Math.random() *9)
 
         let slotMeio = document.getElementById('slot-esqueda')
-        slotMeio.firstElementChild.src = '/slot/'+esquerda+'.png'
+        slotMeio.firstElementChild.src = './../slot/'+esquerda+'.png'
         let slotCentro = document.getElementById('slot-centro')
-        slotCentro.firstElementChild.src = '/slot/'+centro+'.png'
+        slotCentro.firstElementChild.src = './../slot/'+centro+'.png'
         let slotDireita = document.getElementById('slot-direita')
-        slotDireita.firstElementChild.src = '/slot/'+direita+'.png'
+        slotDireita.firstElementChild.src = './../slot/'+direita+'.png'
 
         if(count > 29){
             let finalEsquerda = numeros[esquerda]
-            slotMeio.firstElementChild.src = '/slot/'+finalEsquerda+'.png'
+            slotMeio.firstElementChild.src = './../slot/'+finalEsquerda+'.png'
             let finalCentro = numeros[centro]
-            slotCentro.firstElementChild.src = '/slot/'+finalCentro+'.png'
+            slotCentro.firstElementChild.src = './../slot/'+finalCentro+'.png'
             let finalDireita = numeros[direita]
-            slotDireita.firstElementChild.src = '/slot/'+finalDireita+'.png'
+            slotDireita.firstElementChild.src = './../slot/'+finalDireita+'.png'
 
             if((finalEsquerda===finalDireita)&&(finalEsquerda===finalCentro)&&(finalDireita===finalCentro)){
                 document.getElementById('result').innerText = 'Você acertou as 3 posições e ganhou 1 ponto!'
