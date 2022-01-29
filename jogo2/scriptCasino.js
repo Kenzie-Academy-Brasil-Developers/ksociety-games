@@ -6,7 +6,7 @@ let vitorias = 0;
 let derrotas = 0;
 
 function slot(){
-    const som = new Audio('/jogo2/slot-sound.mp3')
+    const som = new Audio('./jogo2/slot-sound.mp3')
     som.play()
     document.getElementById('start').removeAttribute("onclick");
 
