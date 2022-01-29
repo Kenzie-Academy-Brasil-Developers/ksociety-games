@@ -171,7 +171,7 @@ footer a {
 
 
 body {
-    background-image: url("/medias/matrix.gif");
+    background-image: url("./../medias/matrix.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
