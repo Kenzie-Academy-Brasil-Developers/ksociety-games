@@ -1,7 +1,7 @@
 
 
 function play(){
-    let audio = new Audio('/medias/soundtrack.mp3')
+    let audio = new Audio('./medias/soundtrack.mp3')
     audio.play();
     audio.volume = 0.3;
     document.getElementById('soundtrackmp3').removeAttribute("onclick");
