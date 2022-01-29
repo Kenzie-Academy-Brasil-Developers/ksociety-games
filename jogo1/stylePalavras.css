@@ -286,7 +286,7 @@ td{
     body {
         width:100%;
         height: 100%;
-        background-image: url("/medias/matrix.gif");
+        background-image: url("./../medias/matrix.gif");
         background-repeat: no-repeat;
         background-size: cover;
         background-color: black;
