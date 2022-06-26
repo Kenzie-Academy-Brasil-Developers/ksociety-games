@@ -1,0 +1,246 @@
+
+
+@media screen and (max-width: 800px) {
+    @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
+    body {
+
+        width: 100%;
+        height: 640px;
+        background-color: black;
+        color: aliceblue;
+        font-family: 'Roboto mono', monospace;
+    
+    }
+    
+    #toggleSoundtrack {
+        height:40px;
+    }
+
+    #soundtrackmp3 {
+        cursor:pointer;
+        width:125px;
+        height:40px;
+        background-color: #FFF;
+        color:#000;
+        font-size:22px;
+        font-variant: small-caps;
+        border: 0px;
+        font-family: 'Roboto Mono', monospace;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    main {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        height: 70%;
+        width: 100%;
+    }
+    
+    div {
+        text-align:center;
+        height:600px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content:space-evenly;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    
+    }
+    
+    h1 {
+        margin-top:80px;
+    }
+
+    h2 {
+        margin-top:30px;
+        margin-bottom:10px;
+        font-size: 25px;
+    }
+    
+    div.quest {
+        height:100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    a.red {
+        margin-top:13px;
+        font-size: 20px;
+        color: red;
+        text-decoration: none;
+    
+    }
+    a.red:hover {
+        color: white;
+    }
+    a.blue:hover {
+        color:white;
+    }
+    
+    a.blue {
+
+        color: blue;    
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    p.blue:hover {
+        color: white;
+        
+    }
+    
+    footer {
+        margin-top:80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer a {
+        margin-top:10px;
+        color:white;
+        text-decoration: none;
+        }
+    
+        footer a:hover{
+            color:#1480fb;
+        }
+
+    img{
+        width: 20%;
+        height: 20%;
+    }
+    
+    #creditos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+    }
+}
+@media screen and (min-width: 800px) {
+    @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
+    
+    #toggleSoundtrack {
+        height:40px;
+    }
+
+    #soundtrackmp3 {
+        cursor:pointer;
+        width:125px;
+        height:40px;
+        background-color: #FFF;
+        color:#000;
+        font-size:22px;
+        font-variant: small-caps;
+        border: 0px;
+        font-family: 'Roboto Mono', monospace;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+
+    body {
+        width: 100%;
+        height: 650px;
+        background-color: black;
+        color: aliceblue;
+        font-family: 'Roboto mono', monospace;
+    
+    }
+    
+    main {
+        margin-top:10px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        height: 70%;
+        width: 100%;
+    }
+    
+    div {
+        text-align:center;
+        height:600px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    
+    h1 {
+    }
+
+    h2 {
+        margin-bottom:20px;
+        font-size: 40px;
+    }
+    
+    div.quest {
+        height:130px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    a.red {
+        font-size: 40px;
+        color: red;
+        text-decoration: none;
+    
+    }
+    a.red:hover {
+        color: white;
+    }
+    a.blue:hover {
+        color:white;
+    }
+    
+    a.blue {
+    
+        color: blue;
+        font-size: 40px;
+        text-decoration: none;
+    }
+    
+    p.blue:hover {
+        color: white;
+        
+    }
+    
+    footer {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer a {
+    margin-top:40px;
+    color:white;
+    text-decoration: none;
+    }
+
+    footer a:hover{
+        color:#1480fb;
+    }
+
+    img{
+        width: 20%;
+        height: 20%;
+    }
+    
+    #creditos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 20px;
+        width: 100%;
+        margin-top: 100px;
+    }
+    
+}

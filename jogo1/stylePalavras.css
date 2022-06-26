@@ -1,0 +1,504 @@
+table{
+    width: 230px;
+    height: 100%;
+    margin: auto;
+}
+tr{
+    background-color: #1dac1b;
+    
+}
+td{
+    padding-top:15px;
+    text-align: center;
+    color: white;
+    width: 9%;
+}
+
+.pEncontrado{
+    color: black;
+    margin: 15px;
+}.pEncontrado{
+    color: black;
+    margin: 15px 0 10px 15px;
+    padding-top: 15px;
+}
+
+
+
+@media screen and (max-width: 800px) {   
+   
+    @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
+
+    
+   
+   body {
+        background-color: black;
+        color:#1dac1b; 
+        font-family:  'Roboto Mono', monospace;
+        width: 100%;
+        height: 700px;
+        font-variant: small-caps;
+    }
+    
+    
+
+
+    /* CONTAINER \/ */
+
+    .fullbox {
+    padding-top:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+    /* CABEÇALHO \/ */
+    
+    
+    header {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background-color: #1dac1b;
+        color:#FFF;
+        font-size: 25px;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+
+
+    h3 {
+        text-align:left;
+        padding-left:20px;
+    }
+
+    h4 {
+        text-align:right;
+        padding-right:20px;
+    }
+
+    h5 {
+
+        font-size: 20px;
+        margin-top: 10px;
+        width: 100% ;
+        text-align: center;
+        margin-bottom: 5px;
+        height: 15px;
+    }
+    
+    /* PLAYER INFO \/ */
+
+    .playerInfoBox {
+        margin-top:20px;
+        display:flex;
+        justify-content:space-around;
+    }
+    
+    .text {
+        text-align:center;
+        font-size:22px;
+        color:#1dac1b;
+    }
+
+    div.playerInfo {
+
+        font-size:24px;
+        width: 230px;
+        padding-top:10px;
+    }
+
+        /* FORMULÁRIOS \/ */
+    
+        div.infoForm {
+            
+            width: 230px;
+            margin-bottom:10px;
+            border: 0px;
+            font-family: 'Roboto Mono', monospace;
+            color: white;
+            border-radius: 5px 5px 5px 5px;
+        }
+        
+        .toggle {
+
+        }
+
+        .infoForm button { 
+            margin-top:10px;
+            margin-left:25%;
+            width:125px;
+            height:40px;
+            background-color: #1dac1b;
+            color:#FFF;
+            font-size:22px;
+            font-variant: small-caps;
+            border: 0px;
+            font-family: 'Roboto Mono', monospace;
+            color: white;
+            border-radius: 5px 5px 5px 5px;
+    
+        }
+
+        .infoForm button:hover {
+            background-color: #FFF;
+            color: #41C93E;
+    }
+
+        .button#pesquisar {
+            font-size:22px;
+        }
+        
+        .input {
+            border: 0;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .infoForm input#name {
+            font-size:22px;
+            height:35px;
+            width:97.3%;
+            margin-top:10px;
+        }
+    
+        .infoForm input#word {
+            font-size:22px;
+            height:35px;
+            width:100%;
+            margin-top:10px;
+        }
+    
+
+        div.game {
+            width: 230px;
+            height:600px;
+            text-align:center;
+            font-size: 22px;
+            
+        }
+        
+        /* RESET/FOUND BOX */
+    
+        div.game2 {
+            width: 230px;
+            height:600px;
+        }
+    
+        /* CAÇA PALAVRAS */
+    
+        p.title {
+        }
+    
+        .letterBox {
+            padding-left:5px;
+            padding-right:5px;
+            background-color: #1dac1b;
+            width: 230px;
+            margin-top:30px;
+            height:550px;
+            
+        }
+        
+    
+        /* CHECKBOX */
+        
+        .checkBox {
+            width: 230px;
+            margin-top:40px;
+            font-size:24px;
+            margin-bottom:80px;
+        }
+        
+        .found {
+            width: 238px;
+            margin-top:10px;
+            height:208px;
+            background-color: #FFF;;
+            border-radius: 5px 5px 5px 5px;
+        }
+    
+    
+        /* RESET */
+    
+        button#reset {
+            width: 238px;
+            height:70px;
+            background-color: #1dac1b;
+            color:#FFF;
+            font-size:32px;
+            font-variant: small-caps;
+            border: 0px;
+            font-family: 'Roboto Mono', monospace;
+            color: white;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+        button#reset:hover {
+            background-color: #FFF;
+            color: #41C93E;
+    }
+
+        /* FOOTER */
+
+        footer {
+            width: 100%;
+            height: 50px;
+            background-color: #1dac1b;
+            color:#FFF;
+            font-size:32px;
+            padding-top:15px;
+            align-items:center;
+            font-size:36px;        
+        }
+
+        footer a {
+            padding-left:20px;
+            text-decoration:none;
+            color:#FFF;
+            font-size:25px;
+        }
+
+}
+
+
+
+
+/* DESKTOP ABAIXO */
+
+@media screen and (min-width: 800px) {
+    @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
+
+    #timer{
+        text-align: center;
+        font-size: 60px;
+        margin-top: 40px;
+    }
+    button{
+        cursor: pointer;
+    }
+    #centro{
+        display: none;
+    }
+    body {
+        width:100%;
+        height: 100%;
+        background-image: url("./../medias/matrix.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+        color:#FFF;
+        font-family:  'Roboto Mono', monospace;
+        font-variant: small-caps;
+        border: 0px;
+        font-family: 'Roboto Mono', monospace;
+        color: white;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    /* CONTAINER */
+
+    .fullbox {
+        display:flex;
+        justify-content:space-evenly;
+        margin-top:30px;
+    }
+    
+    /* CABEÇALHO */
+    
+    
+    header {        
+        display:flex;
+        justify-content:space-between;
+        width: 100%;
+        height: 50px;
+        background-color: #1dac1b;
+        color:#FFF;
+        font-size:42px;
+        padding-top:10px;
+        padding-bottom:10px;
+        align-items:center;
+
+    }
+    
+    h1 {
+        font-size:44px;
+        margin-bottom:15px;
+    }
+    
+    h3 {
+        text-align:left;
+        padding-left:50px;
+    }
+
+    h4 {
+        text-align:right;
+        padding-right:50px;
+    }
+
+    h5 {
+        font-size: 25px;
+        height: 70px;
+    }
+    
+    /* PLAYER INFO */
+    
+    .playerInfoBox {
+        display:flex;
+        justify-content:center;
+    }
+
+    .text {
+        font-size:28px;
+        text-align:center;
+    }
+
+    div.playerInfo {
+        margin-top:30px;
+        font-size:24px;
+    }
+
+    
+    /* FORMULÁRIO */
+    
+    div.infoForm {
+        display:flex;
+        width:300px;
+    }
+
+    .infoForm button:hover {
+        background-color: #FFF;
+        color: #41C93E;
+    }
+    
+    .infoForm button#enviarNome {
+        margin-left:25%;
+    }
+
+    .infoForm button#pesquisar{
+    }
+
+    .infoForm button {
+        margin-top:20px;
+        width:150px;
+        height:40px;
+        color:#FFF;
+        background-color: #1dac1b;
+        border: 0px;
+        font-family: 'Roboto Mono', monospace;
+        color: white;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 25px;
+        font-variant: small-caps;
+    }
+    
+    .infoForm input#name {
+        font-size:22px;
+        height:35px;
+        width:300px;
+        margin-top:20px;
+    }
+
+  
+
+    .infoForm input#word {
+        font-size:22px;
+        height:35px;
+        width:200px;
+        margin-bottom:20px;
+        margin-top:20px;
+    }
+
+    /* GAME */
+    
+    div.game {
+        width:300px;
+        height:800px;
+        text-align:center;
+        font-size: 32px;
+    }
+    
+    /* RESET/FOUND BOX */
+
+    div.game2 {
+        width:300px;
+        height:600px;
+        padding-top:40px;
+    }
+
+    /* CAÇA PALAVRAS */
+
+    p.title {
+    }
+
+    .letterBox {
+        background-color: #1dac1b;
+        width:300px;
+        margin-top:20px;
+        height:550px;
+        padding-top:30px;
+        padding-bottom:30px;
+    }
+    
+
+    /* CHECKBOX */
+    
+    .checkBox {
+        width:300px;
+        margin-top:40px;
+        font-size:24px;
+        margin-bottom:70px;
+    }
+    
+    .found {
+        width:300px;
+        margin-top:10px;
+        height:208px;
+        background-color: #FFF;;
+    }
+
+
+    /* RESET */
+
+    button#reset {
+        width:100%;
+        height:70px;
+        color:#FFF;
+        background-color: #1dac1b;
+        border: 0px;
+        font-family: 'Roboto Mono', monospace;
+        color: white;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 42px;
+        font-variant: small-caps;
+    }
+
+    button#reset:hover {
+            background-color: #FFF;
+            color: #41C93E;
+    }
+
+    /* FOOTER */
+
+    footer {
+        height:50px;
+        background-color: #1dac1b;
+        color:#FFF;
+        font-size:32px;
+        align-items:center;
+        font-size:42px;
+        margin-top: 50px;
+        padding-top:5px;
+    }
+
+    footer a {
+        padding-left:10px;
+        text-decoration:none;
+        color:#FFF;
+        font-size:34px;
+    }
+
+}

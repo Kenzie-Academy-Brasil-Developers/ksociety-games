@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../reset.css">
+    <link id="s1" rel="stylesheet" href="./stylePalavras.css">
+    <title>Caça-Palavras - Ksociety</title>
+</head>
+<body>
+    <header>
+            <h3>kenzie academy</h3>
+        
+            <h4>ksociety</h4>
+
+            
+    </header>
+
+        <!-- CONTAINER -->
+
+<section>
+
+        <div class="playerInfoBox">
+                <!-------PLAYER INFO-------->
+
+            <div class="playerInfo">
+
+    
+                <!------FORMULÁRIO----->
+                <div class="infoForm">
+                    
+                    
+                    
+                    <div id="toggle">
+                    <p class="text">digite seu nome:</p>
+
+                    <input type="text" placeholder="" id="name" name="name"/>
+                    <button id ="enviarNome" onclick="toggleName()">enviar</button>
+                    </div>
+    
+                </div>
+    
+            </div>
+        
+        </div>
+
+        <!--BOX GERAL-->
+
+    <div class="fullbox">
+
+
+
+            <!----------GAME------------>
+            <div class="game">
+                
+                <h1>caça palavras_</h1>
+                <h5>sua missão é encontrar todas as palavras escondidas no quadro</h5>
+                <div class="letterBox" id="centro"></div>
+            </div>
+
+            <!--------RESET BOX/WORDS FOUND-------->
+            <div class="game2">
+
+                            <!---CHECKBOX--->
+
+                <div class="checkBox">
+                        <p class="text">palavras que encontrou:</p>
+                        <!-- FORMULÁRIO PALAVRAS ENCONTRADAS -->
+                    <div class="infoForm">
+                       
+                            <input type="text" placeholder="" id="word" name="word">
+                        <button id="pesquisar">enviar</button>
+                        
+                    </div>
+                    <div class="found" id="encontrados"></div>
+                </div>
+
+                <!--------- RESET ---------->
+                <button id="reset">reset</button>
+                <!-- <p id="timer">00:00</p> -->
+                
+        </div>
+    </div>
+
+
+</section>
+<footer>
+    <nav>
+        
+        <a href="./../index.html" class="homepage">home</a>
+    </nav>
+</footer>
+
+    <script type="text/javascript" src="./scriptPalavras.js"></script>
+    <!-- <script type="text/javascript" src="/jogo1/scriptPalavras.js"></script> -->
+</body>
+</html>
